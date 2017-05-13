@@ -1,0 +1,708 @@
+
+.cl {
+    clear: both;
+}
+
+/*顶部工具栏开始*/
+.tools {
+    height: 30px;
+    background-color: #323232;
+    position: relative;
+}
+
+.tools .left-tls {
+    float: left;
+}
+
+.left-tls img {
+    margin: 6px 5px 0 30px;
+}
+
+.tools .center-tls {
+    float: left;
+}
+
+.center-tls ul {
+    margin-left: 13px;
+}
+
+.center-tls li {
+    float: left;
+    line-height: 30px;
+    width: 60px;
+}
+
+.center-tls li:hover {
+    cursor: pointer;
+}
+
+.center-tls a {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", SimHei, SimSun, sans-serif;
+}
+
+.center-tls li span {
+    color: #41C074;
+}
+
+.tools .right-tls {
+    position: absolute;
+    right: 20px;
+}
+
+/*顶部工具栏结束*/
+
+/*logo部分开始*/
+.logo {
+    height: 50px;
+    background-color: white;
+    position: relative;
+}
+
+.logo .left-logo {
+    position: absolute;
+    left: 60px;
+    height: 50px;
+    background: url(../travel-images/logo.jpg) center no-repeat;
+    width: 138px;
+}
+
+.logo .right-content {
+    position: absolute;
+    right: 0px;
+}
+
+.right-content li {
+    float: left;
+    line-height: 50px;
+    width: 90px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.right-content li:hover {
+    background-color: #f6f6f6;
+}
+
+/*logo部分结束*/
+
+/*导航部分开始*/
+.nav {
+    width: 1200px;
+    height: 65px;
+    margin: 0 auto;
+    padding-left: 80px;
+}
+
+.nav ul.ul1 li.level1 {
+    float: left;
+    line-height: 65px;
+    width: 100px;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 26px;
+    position: relative;
+    color: #41C074;
+}
+
+.nav ul.ul1 li.level1 .yincang {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 2;
+    background: #41C074;
+    display: none;
+}
+
+.nav ul.ul1 li.level1 .cur1 {
+    display: block;
+}
+
+.nav ul.ul1 li.level1 .yincang li a {
+    height: 30px;
+    display: block;
+    width: 100px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #F7F7F7;
+    color: #fff;
+}
+
+ul.ul1 li.level1 a.a1 {
+    font-family: "方正准圆简体";
+    color: #41C074;
+}
+
+.ul1 .level1.cur {
+    border-bottom: 2px solid #01903E;
+    height: 63px;
+}
+
+.ul1 .level1.first {
+    border-bottom: 2px solid #01903E;
+    height: 63px;
+}
+
+/*导航部分结束*/
+
+/*banner部分开始*/
+.banner {
+    width: 1200px;
+    height: 320px;
+    margin: 6px auto;
+    position: relative;
+}
+
+.banner ul.list0 li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.banner ul.list0 li.cur {
+    display: block;
+}
+
+.fadeCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    display: none;
+    opacity: 0.4;
+}
+
+.circle {
+    width: 130px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.circle li {
+    margin-right: 10px;
+    background: #ccc;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.circle li.cur {
+    background: #019040;
+}
+
+/*内容区*/
+.hot {
+    width: 680px;
+    height: 30px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #4ECC81;
+    font-size: 14px;
+    color: #6C6C6C;
+    padding-top: 10px;
+}
+
+.hot .new, .hot .main, .hot .manyidu, .hot .comeon {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+}
+
+.hot .new, .hot .comeon {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*.hot .new span {*/
+/*width: 43px;*/
+/*height: 29px;*/
+/*position: absolute;*/
+/*top: -3px;*/
+/*left: -36px;*/
+/*background: url(../images/hot.png);*/
+/*}*/
+
+.hot .main, .hot .manyidu {
+    margin-left: 33px;
+}
+
+.hot .main {
+    width: 305px;
+    overflow: hidden;
+}
+
+.hot .main ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hot .main ul li {
+    line-height: 25px;
+}
+
+.hot .manyidu span {
+    position: absolute;
+    top: 3px;
+    left: 60px;
+    width: 36px;
+    height: 16px;
+    background: #41C074;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.hot .comeon {
+    margin-left: 100px;
+}
+
+.hot .comeon span {
+    position: absolute;
+    top: -6px;
+    left: 67px;
+    width: 32px;
+    height: 31px;
+    background: url(../travel-images/position2.png);
+}
+
+.tejia {
+    width: 1200px;
+    height: 32px;
+    border-bottom: 4px solid #41C074;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tejia .wenzi {
+    width: 210px;
+    font-size: 22px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.wenzi span.cur {
+    color: #41C074;
+}
+
+.tejia .sanjiao {
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-color: transparent transparent #41C074;
+    border-style: dashed dashed solid dashed;
+    position: absolute;
+    top: 20px;
+    _top: 12px;
+    left: 3px;
+    margin-left: 86px;
+}
+
+.tejia .more {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    font-size: 15px;
+}
+
+.youhuitu {
+    width: 1200px;
+    padding-top: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.youhuitu ul li {
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 280px;
+    height: 280px;
+    background: #fff;
+    -webkit-box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 3px #999;
+    border-bottom: 1px solid #CCC;
+}
+
+.youhuitu ul li:hover img {
+    background: #000;
+    opacity: 0.7;
+    height: 205px;
+}
+
+.youhuitu ul li .xiangxi {
+    padding: 5px 0 0 10px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #6F6F6F;
+    text-align: center;
+}
+
+.youhuitu ul li img {
+    display: block;
+    width: 280px;
+    height: 200px;
+}
+
+.youhuitu-in div {
+    float: left;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.youhuitu-inl {
+    width: 50px;
+    background: #41C074;
+    font-size: 20px;
+}
+
+.youhuitu-inr {
+    width: 230px;
+    background: #4ECC81;
+    font-size: 18px;
+}
+
+.yaotiao img {
+    display: block;
+    width: 100%;
+    height: 106px;
+    margin-top: 13px;
+}
+
+.pinpai {
+    width: 1200px;
+    height: 32px;
+    border-bottom: 4px solid #01903E;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pinpai .wenzi {
+    width: 210px;
+    font-size: 22px;
+    margin-left: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    color: #01903E;
+    font-weight: bold;
+}
+
+.pinpai .more {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    font-size: 15px;
+    _top: 30px;
+}
+
+.pinpai_in {
+    width: 1200px;
+    height: 424px;
+    margin: 0 auto;
+    padding: 10px 10px 0 10px;
+}
+
+.pinpai_inl {
+    width: 280px;
+    height: 424px;
+    float: left;
+    position: relative;
+}
+
+.pinpai_inl img {
+    width: 262px;
+    height: 424px;
+    display: block;
+}
+
+.pinpai_inlin {
+    width: 170px;
+    height: 125px;
+    background: #fff;
+    position: absolute;
+    top: 55%;
+    left: 60px;
+    -filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.pinpai_inl_span1 {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    width: 160px;
+    height: 22px;
+    border-bottom: 2px solid #333;
+    position: absolute;
+    top: 260px;
+    left: 69px;
+}
+
+.pinpai_inl_span2 {
+    display: block;
+    font-size: 14px;
+    width: 150px;
+    line-height: 16px;
+    position: absolute;
+    top: 290px;
+    left: 69px;
+    font-family: "黑体";
+}
+
+.pinpai_inr {
+    width: 864px;
+    height: 424px;
+    float: left;
+}
+
+.pinpai_inr ul li {
+    width: 175px;
+    height: 190px;
+    float: left;
+    margin-right: 40px;
+    _margin-right: 30px;
+}
+
+.pinpai_inr ul li img {
+    display: block;
+    width: 175px;
+    height: 125px;
+}
+
+.pinpai_inr ul li span {
+    display: block;
+    width: 32px;
+    height: 31px;
+    background: url(../travel-images/position1.png) no-repeat;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.pinpai_inr ul li.cur span {
+    background-image: url(../travel-images/position2.png);
+}
+
+.pinpai_inr ul li p {
+    display: inline-block;
+    font-family: "方正准圆简体";
+    font-size: 18px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.chujingyou {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.chujingyou-l {
+    width: 805px;
+    float: left;
+}
+
+.chujingyou-l ul li {
+    float: left;
+    margin-right: 30px;
+    width: 174px;
+    height: 270px;
+    position: relative;
+}
+
+.chujingyou-l ul li.li11, .chujingyou-l ul li.li21 {
+    width: 362px;
+}
+
+.chujingyou-l ul li img {
+    display: block;
+    width: 174px;
+    height: 219px;
+}
+
+.chujingyou-l ul li img.img11, .chujingyou-l ul li img.img21 {
+    display: block;
+    width: 362px;
+    height: 219px;
+}
+
+.chujingyou-l ul li span {
+    display: block;
+    font-size: 21px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.chujingyou-l ul li.li11 span, .chujingyou-l ul li.li21 span {
+    width: 362px;
+    text-align: center;
+}
+
+.chujingyou-l ul li div {
+    width: 174px;
+    height: 219px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.66;
+    -filter: alpha(opacity=66);
+    text-align: center;
+    line-height: 219px;
+    color: #fff;
+    display: none;
+}
+
+.chujingyou-l ul li .heibu1, .chujingyou-l ul li .heibu2 {
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 362px;
+    height: 219px;
+}
+
+.chujingyou-r {
+    width: 354px;
+    height: 500px;
+    float: left;
+    border: 2px solid #41C074;
+    position: relative;
+    background: #FFFFFF;
+}
+
+.chujingyou-r span {
+    width: 163px;
+    height: 47px;
+    background: url(../travel-images/show.png);
+    position: absolute;
+    top: 10px;
+    left: -13px;
+}
+
+.chujingyou-r img {
+    width: 220px;
+    height: 142px;
+    margin-top: 75px;
+    margin-left: 64px;
+}
+
+.chujingyou-r .show {
+    width: 265px;
+    margin: 0 auto;
+}
+
+.chujingyou-r .show ul li {
+    width: 265px;
+    height: 24px;
+    background: url(../travel-images/ico.png) no-repeat 0 -80px;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.chujingyou-r .show ul li a {
+    width: 265px;
+    height: 24px;
+    display: block;
+    font-family: "Adobe 宋体";
+    font-size: 17px;
+    line-height: 22px;
+    color: #4C4A4B;
+}
+
+.chujingyou-r .show ul li a:hover {
+    text-decoration: underline;
+    color: #41C074;
+}
+
+.footer {
+    height: 106px;
+    margin: 0 auto;
+    border-top: 4px solid #01903E;
+    padding-left: 30px;
+    background-color: #323232;
+}
+
+.footer .navfoot {
+    width: 980px;
+    height: 40px;
+    float: left;
+}
+
+.footer .navfoot ul li {
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 50px;
+}
+
+.footer .navfoot ul li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer .share {
+    width: 200px;
+    height: 30px;
+    float: left;
+    padding-top: 10px;
+}
+
+.footer .share span {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url(../travel-images/sharepic.gif) no-repeat;
+}
+
+.footer .share span.s1 {
+    background-position: 0 -36px;
+}
+
+.footer .share span.s2 {
+    background-position: -29px -36px;
+}
+
+.footer .share span.s3 {
+    background-position: 0 -64px;
+}
+
+.footer .share span.s4 {
+    background-position: -29px -64px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #9F9F9F;
+}
+
+/*返航*/
+.goTop {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    left: 1280px;
+    top: 500px;
+    display: none;
+}

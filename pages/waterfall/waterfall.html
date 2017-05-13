@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>【穷游网】出境游_旅游攻略_自助游攻略_游记攻略_境外旅游 旅途永无止尽</title>
+    <link rel="stylesheet" href="css/waterfall.css"/>
+    <link rel=icon href="images/app_qyer.png"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/waterfall_index.js"></script>
+    <script src="js/masonry-docs.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //放大镜的伸缩
+            $("#water_bigLi").mouseenter(function () {
+                $("#water_txt").stop().show(1000);
+            });
+            $("#water_bigLi").mouseleave(function () {
+                $("#water_txt").stop().hide(1000);
+            });
+            //tab栏切换
+            $("#tabss li").mouseover(function () {
+                var index = $(this).index();
+                for (var i = 0; i < $("#tabss li").length; i++) {
+                    $("#tabss li")[i].className = "";
+                }
+                this.className = "current";
+                for (var j = 0; j < $("#bd li").length; j++) {
+                    $("#bd li")[j].className = "";
+                }
+                $("#bd li")[index].className = "current";
+            });
+
+        });
+        $(function () {
+            //小火箭
+            $(window).scroll(function () {
+                var scrollHeight = $(this).scrollTop();
+                if (scrollHeight > 100) {
+                    $("#returnTop").fadeIn(300);
+                }
+                else {
+                    $("#returnTop").fadeOut(300);
+                }
+            });
+            $('#returnTop').click(function () {
+                $('html,body').animate({scrollTop: '0px'}, 1000);
+            });
+            //瀑布流
+            function waterFall(con, jsonIn) {
+                var $container = $('#' + con + '');
+                $container.imagesLoaded(function () {
+                    $container.masonry({
+                        itemSelector: '.box',
+                        isAnimated: true
+                    });
+                });
+                var json = jsonIn;
+                //判断触底，加载更多的图片
+                $(window).scroll(function () {
+                    //当距离底部就剩下500px的时候，加载新图片
+                    if ($(document).height() - $(this).scrollTop() - $(this).height() < 500) {
+                        //创建一个jquery对象
+                        var str = "";
+                        for (var i = 0; i < json.length; i++) {
+                            str += '<div class="box"><img src="' + json[i].src + '" alt=""/></div>';
+                        }
+                        var $boxes = $(str);
+                        $container.append($boxes).masonry("appended", $boxes, true);//追加元素
+                        $container.imagesLoaded(function () {
+                            $container.masonry();
+                        });//加载完图片后，会实现自动重新排列。
+                    }
+                });
+            }
+
+//            第一个li
+            waterFall("container1", [
+                {src: "images/01.jpg"},
+                {src: "images/02.jpg"},
+                {src: "images/03.jpg"},
+                {src: "images/04.jpg"},
+                {src: "images/05.jpg"},
+                {src: "images/06.jpg"},
+                {src: "images/07.jpg"},
+                {src: "images/08.jpg"},
+            ]);
+            //第二个li
+            waterFall("container2", [
+                {src: "images/P_000.jpg"},
+                {src: "images/P_001.jpg"},
+                {src: "images/P_002.jpg"},
+                {src: "images/P_003.jpg"},
+                {src: "images/P_004.jpg"},
+                {src: "images/P_005.jpg"},
+                {src: "images/P_006.jpg"},
+                {src: "images/P_007.jpg"},
+            ]);
+            //第三个li
+            waterFall("container3", [
+                {src: "images/09.jpg"},
+                {src: "images/10.jpg"},
+                {src: "images/11.jpg"},
+                {src: "images/12.jpg"},
+                {src: "images/13.jpg"},
+                {src: "images/14.jpg"},
+                {src: "images/15.jpg"},
+                {src: "images/16.jpg"},
+            ]);
+            //第四个li
+            waterFall("container4", [
+                {src: "images/17.jpg"},
+                {src: "images/18.jpg"},
+                {src: "images/19.jpg"},
+                {src: "images/20.jpg"},
+                {src: "images/21.jpg"},
+                {src: "images/22.jpg"},
+                {src: "images/23.jpg"},
+                {src: "images/24.jpg"},
+            ]);
+            //第五个li
+            waterFall("container5", [
+                {src: "images/25.jpg"},
+                {src: "images/26.jpg"},
+                {src: "images/27.jpg"},
+                {src: "images/28.jpg"},
+                {src: "images/29.jpg"},
+                {src: "images/30.jpg"},
+                {src: "images/31.jpg"},
+                {src: "images/32.jpg"},
+            ]);
+            //第六个li
+            waterFall("container6", [
+                {src: "images/33.jpg"},
+                {src: "images/34.jpg"},
+                {src: "images/35.jpg"},
+                {src: "images/36.jpg"},
+                {src: "images/37.jpg"},
+                {src: "images/38.jpg"},
+                {src: "images/39.jpg"},
+                {src: "images/40.jpg"},
+            ]);
+            //第七个li
+            waterFall("container7", [
+                {src: "images/41.jpg"},
+                {src: "images/42.jpg"},
+                {src: "images/43.jpg"},
+                {src: "images/44.jpg"},
+                {src: "images/45.jpg"},
+                {src: "images/46.jpg"},
+                {src: "images/47.jpg"},
+                {src: "images/48.jpg"},
+            ]);
+            //第八个li
+            waterFall("container8", [
+                {src: "images/49.jpg"},
+                {src: "images/50.jpg"},
+                {src: "images/51.jpg"},
+                {src: "images/52.jpg"},
+                {src: "images/53.jpg"},
+                {src: "images/54.jpg"},
+                {src: "images/55.jpg"},
+                {src: "images/56.jpg"},
+            ]);
+        })
+    </script>
+    <script>
+        //跑马灯
+        window.onload = function () {
+            setInterval(function () {
+                var tt = document.title;
+                document.title = tt.substr(1) + tt.charAt(0);      //注意substr和charAt的顺序不可以写反了
+
+            }, 50);
+        };
+    </script>
+</head>
+<body>
+<!--tool开始-->
+<div class="water_tool">
+    <a href="../../index.html"><img src="images/logo.png"></a>
+    <ul class="fl water_ul1">
+        <li><a class="water_green" href="#">目的地</a></li>
+        <li><a href="../detail/bbs.html">锦囊</a></li>
+        <li><a href="../xingcheng/travel.html">行程助手</a></li>
+        <li class="water_dropdown"><a href="#">社区
+            <i><s>◇</s></i></a>
+        </li>
+        <li><a href="../ziyouxing/z.qyer.com/index.htm">最世界·自由行</a></li>
+        <li><a href="#">机票</a></li>
+        <li><a href="#">酒店</a></li>
+        <li class="water_dropdown"><a href="#">预订
+            <i><s>◇</s></i></a>
+        </li>
+    </ul>
+    <ul class="fr water_ul2">
+        <li id="water_bigLi">
+            <input type="text" id="water_txt" placeholder="一同出发吧！！！"/>
+            <a class="water_publica1 a1" href="#"></a>
+        </li>
+        <li class="water_sp"></li>
+        <li><a class="water_publica1 a2" href="#"></a></li>
+        <li><a class="water_publica1 a3" href="#"></a></li>
+        <li><a class="water_publica1 a4" href="#"></a></li>
+        <li><a class="water_a1" href="../login/registerIndex.html">注册</a></li>
+        <li><a class="water_a1" href="../login/loginIndex.html">登陆</a></li>
+    </ul>
+</div>
+<!--main开始-->
+<div class="water_main">
+    <video id="mtyvideo2" class="hero-video" preload="preload" loop="loop" autoplay="autoplay">
+        <source src="media/video.webm" type="video/webm">
+    </video>
+    <!--search开始-->
+    <div class="water_search">
+        <div class="water_title">你好，世界!</div>
+        <div class="water_opacity">
+            <div class="text">
+                <input type="text" class="water_txt1"/>
+                <s><img src="images/mirror3.png" alt=""/></s>
+            </div>
+            <div class="water_ul3">
+                <ul>
+                    <li class="water_te1">热门城市：</li>
+                    <li><a href="#">香港</a></li>
+                    <li><a href="#">曼谷</a></li>
+                    <li><a href="#">澳门</a></li>
+                    <li><a href="#">东京</a></li>
+                    <li><a href="#">巴黎</a></li>
+                </ul>
+                <br/>
+
+                <p class="water_p1">查看全部国家列表&gt;&gt;</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--tab栏开始    -->
+<div class="water_tab w">
+    <h2>探索精彩世界</h2>
+    <ul class="tabs" id="tabss">
+        <li><a href="javascript:void(0);">如临仙境</a></li>
+        <li><a href="javascript:void(0);">怀旧时光</a></li>
+        <li><a href="javascript:void(0);">魅力夜色</a></li>
+        <li><a href="javascript:void(0);">海岛婚礼</a></li>
+        <li><a href="javascript:void(0);">森林氧吧</a></li>
+        <li><a href="javascript:void(0);">冰淇淋店</a></li>
+        <li><a href="javascript:void(0);">跳蚤市集</a></li>
+        <li><a href="javascript:void(0);">魔幻世界</a></li>
+    </ul>
+    <div class="bd w" id="bd">
+        <ul>
+            <li class="current">
+                <div id="container1">
+                    <div class="box"><img src="images/01.jpg" alt=""/></div>
+                    <div class="box"><img src="images/02.jpg" alt=""/></div>
+                    <div class="box"><img src="images/03.jpg" alt=""/></div>
+                    <div class="box"><img src="images/04.jpg" alt=""/></div>
+                    <div class="box"><img src="images/05.jpg" alt=""/></div>
+                    <div class="box"><img src="images/06.jpg" alt=""/></div>
+                    <div class="box"><img src="images/07.jpg" alt=""/></div>
+                    <div class="box"><img src="images/08.jpg" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div id="container2">
+                    <div class="box"><img src="images/P_000.jpg" alt=""/></div>
+                    <div class="box"><img src="images/P_001.jpg" alt=""/></div>
+                    <div class="box"><img src="images/P_002.jpg" alt=""/></div>
+                    <div class="box"><img src="images/P_003.jpg" alt=""/></div>
+                    <div class="box"><img src="images/P_004.jpg" alt=""/></div>
+                    <div class="box"><img src="images/P_005.jpg" alt=""/></div>
+                    <div class="box"><img src="images/P_006.jpg" alt=""/></div>
+                    <div class="box"><img src="images/P_007.jpg" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div id="container3">
+                    <div class="box"><img src="images/09.jpg" alt=""/></div>
+                    <div class="box"><img src="images/10.jpg" alt=""/></div>
+                    <div class="box"><img src="images/11.jpg" alt=""/></div>
+                    <div class="box"><img src="images/12.jpg" alt=""/></div>
+                    <div class="box"><img src="images/13.jpg" alt=""/></div>
+                    <div class="box"><img src="images/14.jpg" alt=""/></div>
+                    <div class="box"><img src="images/15.jpg" alt=""/></div>
+                    <div class="box"><img src="images/16.jpg" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div id="container4">
+                    <div class="box"><img src="images/17.jpg" alt=""/></div>
+                    <div class="box"><img src="images/18.jpg" alt=""/></div>
+                    <div class="box"><img src="images/19.jpg" alt=""/></div>
+                    <div class="box"><img src="images/20.jpg" alt=""/></div>
+                    <div class="box"><img src="images/21.jpg" alt=""/></div>
+                    <div class="box"><img src="images/22.jpg" alt=""/></div>
+                    <div class="box"><img src="images/23.jpg" alt=""/></div>
+                    <div class="box"><img src="images/24.jpg" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div id="container5">
+                    <div class="box"><img src="images/25.jpg" alt=""/></div>
+                    <div class="box"><img src="images/26.jpg" alt=""/></div>
+                    <div class="box"><img src="images/27.jpg" alt=""/></div>
+                    <div class="box"><img src="images/28.jpg" alt=""/></div>
+                    <div class="box"><img src="images/29.jpg" alt=""/></div>
+                    <div class="box"><img src="images/30.jpg" alt=""/></div>
+                    <div class="box"><img src="images/31.jpg" alt=""/></div>
+                    <div class="box"><img src="images/32.jpg" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div id="container6">
+                    <div class="box"><img src="images/33.jpg" alt=""/></div>
+                    <div class="box"><img src="images/34.jpg" alt=""/></div>
+                    <div class="box"><img src="images/35.jpg" alt=""/></div>
+                    <div class="box"><img src="images/36.jpg" alt=""/></div>
+                    <div class="box"><img src="images/37.jpg" alt=""/></div>
+                    <div class="box"><img src="images/38.jpg" alt=""/></div>
+                    <div class="box"><img src="images/39.jpg" alt=""/></div>
+                    <div class="box"><img src="images/40.jpg" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div id="container7">
+                    <div class="box"><img src="images/41.jpg" alt=""/></div>
+                    <div class="box"><img src="images/42.jpg" alt=""/></div>
+                    <div class="box"><img src="images/43.jpg" alt=""/></div>
+                    <div class="box"><img src="images/44.jpg" alt=""/></div>
+                    <div class="box"><img src="images/45.jpg" alt=""/></div>
+                    <div class="box"><img src="images/46.jpg" alt=""/></div>
+                    <div class="box"><img src="images/47.jpg" alt=""/></div>
+                    <div class="box"><img src="images/48.jpg" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div id="container8">
+                    <div class="box"><img src="images/49.jpg" alt=""/></div>
+                    <div class="box"><img src="images/50.jpg" alt=""/></div>
+                    <div class="box"><img src="images/51.jpg" alt=""/></div>
+                    <div class="box"><img src="images/52.jpg" alt=""/></div>
+                    <div class="box"><img src="images/53.jpg" alt=""/></div>
+                    <div class="box"><img src="images/54.jpg" alt=""/></div>
+                    <div class="box"><img src="images/55.jpg" alt=""/></div>
+                    <div class="box"><img src="images/56.jpg" alt=""/></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="returnTop">
+    <img src="images/top.png">
+</div>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>【穷游网】出境游_旅游攻略_自助游攻略_游记攻略_境外旅游 - 穷游网,旅途永无穷尽</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/travel.css"/>
+    <script type="text/javascript" src="jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // 导航
+            $(".nav>ul>li").mouseenter(function (event) {
+                $(this).addClass("cur").siblings().removeClass("cur");
+                $(this).children(".yincang").stop().slideDown();
+
+            });
+            $(".nav>ul>li").mouseleave(function (event) {
+                $(this).removeClass("cur");
+                $(this).children(".yincang").stop().slideUp();
+            });
+            // tejia
+            $(".tejia .wenzi span").mouseenter(function (event) {
+                $(this).addClass("cur").siblings().removeClass("cur");
+            });
+            // 品牌目的地
+            $(".pinpai_inr ul li").mouseenter(function (event) {
+                $(this).addClass("cur").siblings().removeClass("cur");
+            });
+            $(".pinpai_inr ul li").mouseleave(function (event) {
+                $(".pinpai_inr ul li").removeClass("cur");
+            });
+            //
+            $(".tututu").mouseenter(function (event) {
+                $(this).children(".heibu").stop().slideDown();
+            });
+            $(".tututu").mouseleave(function (event) {
+                $(this).children(".heibu").stop().slideUp();
+            });
+            //banner
+            var nowing = 0;
+            var $imglis = $(".banner .list0 li");
+            var $fadeCover = $(".fadeCover");
+            var fadeIntime = 500;
+            var fadeOutime = 800;
+            var $circle = $(".circle li");
+            var timer;
+
+            // 定义函数
+            function rightbtn() {
+                nowing++;
+                if (nowing > $imglis.length - 1) {
+                    nowing = 0;
+                }
+                // 再调用函数;
+                dong();
+            };
+            // 定时器
+            timer = setInterval(rightbtn, 2000);
+            $(".banner").mouseenter(function () {
+                clearInterval(timer);
+
+            });
+            $(".banner").mouseleave(function () {
+                clearInterval(timer);
+                timer = setInterval(rightbtn, 2000);
+            });
+            // 点击小圆点事件
+            $circle.click(function () {
+                nowing = $(this).index();
+                dong();
+            });
+            function dong() {
+                // 先让fadecover淡入，让全局变白
+                $fadeCover.fadeIn(fadeIntime, function () {
+                    $imglis.eq(nowing).addClass('cur').siblings().removeClass('cur');
+                    // 淡出让黑布消失
+                    $(this).fadeOut(fadeOutime);
+                })
+                $circle.eq(nowing).addClass("cur").siblings().removeClass("cur");
+            }
+            //返回顶部
+            $(window).scroll(function(){
+                var scrollHeight=$(this).scrollTop();
+                if(scrollHeight>100){
+                    $(".goTop").fadeIn(300);
+                }
+                else{
+                    $(".goTop").fadeOut(300);
+                }
+            });
+            $(".goTop").click(function () {
+                $('html,body').animate({scrollTop: '0px'}, 1000);
+            });
+        });
+    </script>
+    <script>
+        setInterval(function(){
+            var tt=document.title;
+            document.title=tt.substr(1)+tt.charAt(0);
+
+        },50);
+    </script>
+</head>
+<body>
+<!--顶部工具栏开始-->
+<div class="tools">
+    <div class="left-tls">
+        <a href="../../index.html"><img src="travel-images/logo.png" alt="" width="58" heigth="18"/></a>
+    </div>
+    <div class="center-tls">
+        <ul>
+            <li><a href="../waterfall/waterfall.html">目的地</a></li>
+            <li><a href="../detail/bbs.html">锦囊</a></li>
+            <li style="width:80px;"><a href="#"><span>行程助手</span></a></li>
+            <li><a href="#">社区</a></li>
+            <li style="width:110px"><a href="../ziyouxing/z.qyer.com/index.htm">最世界·自由行</a></li>
+            <li><a href="#">机票</a></li>
+            <li><a href="#">酒店</a></li>
+            <li><a href="#">预订</a></li>
+        </ul>
+    </div>
+    <div class="right-tls">
+        <img src="travel-images/icon1.png" alt=""/>
+    </div>
+</div>
+<!--顶部工具栏结束-->
+<!--logo部分开始-->
+<div class="logo">
+    <div class="left-logo"></div>
+    <div class="right-content">
+        <ul>
+            <li><a href="#">使用帮助</a></li>
+            <li><a href="#">APP下载</a></li>
+            <li style="width: 110px;"><a href="#">免费私人订制</a></li>
+            <li><a href="#">企业版</a></li>
+            <li><a href="#">微信群</a></li>
+        </ul>
+    </div>
+</div>
+<!--logo部分结束-->
+<!--导航部分开始-->
+<div class="nav">
+    <ul class="ul1">
+        <li class="level1 cur first"><a class="a1" href="#">首页</a></li>
+        <li class="level1"><a class="a1" href="">目的地</a>
+            <ul class="yincang">
+                <li><a href="#">境内游</a></li>
+                <li><a href="#">境外游</a></li>
+                <li><a href="#">周边游</a></li>
+            </ul>
+        </li>
+        <li class="level1"><a class="a1" href="#">发现</a>
+            <ul class="yincang">
+                <li><a href="#">美景</a></li>
+                <li><a href="#">美食</a></li>
+            </ul>
+        </li>
+        <li class="level1"><a class="a1" href="#">社区</a></li>
+        <li class="level1"><a class="a1" href="#">自驾</a></li>
+        <li class="level1"><a class="a1" href="#">预定</a>
+            <ul class="yincang">
+                <li><a href="#">酒店</a></li>
+                <li><a href="#">机票</a></li>
+                <li><a href="#">地接</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!--导航部分结束-->
+<!--banner部分开始-->
+<div class="banner">
+    <ul class="list0">
+        <li class="cur">
+            <a href="#"><img src="travel-images/bg-1.jpg" alt=""/></a>
+        </li>
+        <li>
+            <a href="#"><img src="travel-images/bg-2.jpg" alt=""/></a>
+        </li>
+        <li>
+            <a href="#"><img src="travel-images/bg-3.jpg" alt=""/></a>
+        </li>
+    </ul>
+    <div class="fadeCover"></div>
+    <ul class="circle">
+        <li class="cur">1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+<!-- 内容区域 -->
+<!-- 分享 -->
+<div class="cl"></div>
+<div class="hot">
+    <div class="new">最新点评
+        <span></span>
+    </div>
+    <div class="main">
+        <ul>
+            <li class="cur">马尔代夫真的太美了，下次还要再去！</li>
+            <li>丽江之美，美及天下</li>
+            <li>做一个没有故事的人,与我一起环游世界。</li>
+            <li>转机的时候还能在新加坡机场免税店购物。</li>
+
+        </ul>
+    </div>
+    <script type="text/javascript" src="js/hot.js"></script>
+    <div class="manyidu">满意度：
+        <span>100%</span>
+    </div>
+    <div class="comeon">即刻出发
+        <span></span>
+    </div>
+</div>
+<div class="cl"></div>
+<div class="tejia">
+    <p class="wenzi">
+        <span class="cur">每日特价</span>
+        <span>特价机票</span>
+    </p>
+
+    <p class="sanjiao"></p>
+
+    <p class="more"><a href="#">更多>></a></p>
+</div>
+<div class="youhuitu">
+    <ul>
+        <li><img src="travel-images/te01.jpg" alt=""/>
+
+            <div class="youhuitu-in">
+                <div class="youhuitu-inl"> 优惠</div>
+                <div class="youhuitu-inr">迪拜帆船游超值特惠</div>
+                <div class="xiangxi">全国联运-迪拜帆船酒店三天三晚自由行，奢华体验 都套餐选择住帆船，做土豪，享好礼。</div>
+            </div>
+        </li>
+        <li><img src="travel-images/te02.jpg" alt=""/>
+
+            <div class="youhuitu-in">
+                <div class="youhuitu-inl"> 优惠</div>
+                <div class="youhuitu-inr">澳洲三城游超值特惠</div>
+                <div class="xiangxi">澳洲三城自由行8/9天，悉尼黄金海岸布尼斯班 豪华酒店南航 广州飞不回头</div>
+            </div>
+        </li>
+        <li><img src="travel-images/te03.jpg" alt=""/>
+
+            <div class="youhuitu-in">
+                <div class="youhuitu-inl"> 优惠</div>
+                <div class="youhuitu-inr">亚德里亚海超值特惠</div>
+                <div class="xiangxi">全国联运-亚德里亚自由行，奢华体验 都套餐选，做土豪，享好礼。</div>
+            </div>
+        </li>
+        <li><img src="travel-images/te04.jpg" alt=""/>
+
+            <div class="youhuitu-in">
+                <div class="youhuitu-inl"> 优惠</div>
+                <div class="youhuitu-inr">美国自由行超值特惠</div>
+                <div class="xiangxi">美国自由行西岸10天7晚 自驾游全国出发一价全包含签证 全国联运7晚酒店自驾签证费全包</div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="youhuitu">
+    <ul>
+        <li><img src="travel-images/te05.jpg" alt=""/>
+
+            <div class="youhuitu-in">
+                <div class="youhuitu-inl"> 优惠</div>
+                <div class="youhuitu-inr">迪拜帆船游超值特惠</div>
+                <div class="xiangxi">全国联运-迪拜帆船酒店三天三晚自由行，奢华体验 都套餐选择住帆船，做土豪，享好礼。</div>
+            </div>
+        </li>
+        <li><img src="travel-images/te06.jpg" alt=""/>
+
+            <div class="youhuitu-in">
+                <div class="youhuitu-inl"> 优惠</div>
+                <div class="youhuitu-inr">澳洲三城游超值特惠</div>
+                <div class="xiangxi">澳洲三城自由行8/9天，悉尼黄金海岸布尼斯班 豪华酒店南航 广州飞不回头</div>
+            </div>
+        </li>
+        <li><img src="travel-images/te07.jpg" alt=""/>
+
+            <div class="youhuitu-in">
+                <div class="youhuitu-inl"> 优惠</div>
+                <div class="youhuitu-inr">亚德里亚海超值特惠</div>
+                <div class="xiangxi">全国联运-亚德里亚自由行，奢华体验 都套餐选，做土豪，享好礼。</div>
+            </div>
+        </li>
+        <li><img src="travel-images/te08.jpg" alt=""/>
+
+            <div class="youhuitu-in">
+                <div class="youhuitu-inl"> 优惠</div>
+                <div class="youhuitu-inr">美国自由行超值特惠</div>
+                <div class="xiangxi">美国自由行西岸10天7晚 自驾游全国出发一价全包含签证 全国联运7晚酒店自驾签证费全包</div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<div class="yaotiao">
+    <img src="travel-images/yaotiao.jpg" alt=""/>
+</div>
+<div class="pinpai">
+    <p class="wenzi">
+        品牌目的地
+    </p>
+
+    <p class="more"><a href="#">更多>></a></p>
+</div>
+<div class="pinpai_in">
+    <div class="pinpai_inl">
+        <img src="travel-images/pinpai_left.png" style="height:360px;" alt=""/>
+
+        <div class="pinpai_inlin">
+        </div>
+        <span class="pinpai_inl_span1">马尔代夫超值连线游</span>
+        <span class="pinpai_inl_span2">让你一次游个够，心动不如行动吧！</span>
+    </div>
+    <div class="pinpai_inr">
+        <ul>
+            <li class="cur"><img src="travel-images/fuzhou.jpg" alt=""/>
+                <span></span>
+
+                <p>福州</p>
+            </li>
+            <li><img src="travel-images/libo.jpg" alt=""/>
+                <span></span>
+
+                <p>荔波</p>
+            </li>
+            <li><img src="travel-images/malai.jpg" alt=""/>
+                <span></span>
+
+                <p>马来西亚</p>
+            </li>
+            <li><img src="travel-images/rongshui.jpg" alt=""/>
+                <span></span>
+
+                <p>融水</p>
+            </li>
+            <li><img src="travel-images/shannan.jpg" alt=""/>
+                <span></span>
+
+                <p>山南</p>
+            </li>
+            <li><img src="travel-images/shilin.jpg" alt=""/>
+                <span></span>
+
+                <p>石林</p>
+            </li>
+            <li><img src="travel-images/shanqiu.jpg" alt=""/>
+                <span></span>
+
+                <p>山丘</p>
+            </li>
+            <li><img src="travel-images/xian.jpg" alt=""/>
+                <span></span>
+
+                <p>西安</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="pinpai">
+    <p class="wenzi">
+        出境游
+    </p>
+
+    <p class="more"><a href="#">更多>></a></p>
+</div>
+<div class="chujingyou">
+    <div class="chujingyou-l">
+        <ul>
+            <li class="li11 tututu">
+                <img src="travel-images/11.jpg" alt="" class="img11"/>
+                <span>怦然心动·吉之岛</span>
+
+                <div class="heibu1 heibu">心动吉之岛</div>
+            </li>
+            <li class="tututu">
+                <img src="travel-images/12.jpg" alt=""/>
+                <span>第一缕阳光·斐然</span>
+
+                <div class="heibu">第一缕阳光</div>
+            </li>
+            <li class="tututu">
+                <img src="travel-images/13.jpg" alt=""/>
+                <span>马尔代夫·度蜜月</span>
+
+                <div class="heibu">度蜜月</div>
+            </li>
+            <li class="li21 tututu">
+                <img src="travel-images/21.jpg" alt="" class="img21"/>
+                <span>欧冠·巴塞罗那 </span>
+
+                <div class="heibu2 heibu">巴塞罗那</div>
+            </li>
+            <li class="tututu">
+                <img src="travel-images/22.jpg" alt=""/>
+                <span>恋爱国度·巴黎</span>
+
+                <div class="heibu">恋爱国度</div>
+            </li>
+            <li class="tututu">
+                <img src="travel-images/23.jpg" alt=""/>
+                <span> 执子之手·希腊</span>
+
+                <div class="heibu">执手希腊</div>
+            </li>
+        </ul>
+    </div>
+    <div class="chujingyou-r">
+        <span></span>
+        <img src="travel-images/cheshow.jpg" alt=""/>
+        <div class="show">
+            <ul>
+                <li><a href="#">【游记】致青春之旅 锡勒草原</a></li>
+                <li><a href="#">【游记】自驾重庆武隆风景区</a></li>
+                <li><a href="#">【游记】无止境之征探索未历之美</a></li>
+                <li><a href="#">【游记】骏雅新派逛古都</a></li>
+                <li><a href="#">【游记】奥迪2016国际露营大会</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="navfoot">
+        <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">营销服务</a></li>
+            <li><a href="#">商家服务</a></li>
+            <li><a href="#">新手上路</a></li>
+            <li><a href="#">合作伙伴</a></li>
+            <li><a href="#">关注我们</a></li>
+        </ul>
+    </div>
+    <div class="share">
+        <span class="s1"></span>
+        <span class="s2"></span>
+        <span class="s3"></span>
+        <span class="s4"></span>
+    </div>
+    <div class="cl"></div>
+    <p>版权所有&copy;2016 Q TRAVEL穷游有限公司</p>
+
+    <p>京ICP备11088888号 京公网安备11010688900</p>
+</div>
+<!-- 返航 -->
+<div class="goTop">
+    <img src="travel-images/top.png">
+</div>
+</body>
+</html>

@@ -1,0 +1,596 @@
+@charset "UTF-8";
+body,p,div,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    list-style: none;}
+
+i,s{
+    text-decoration: none;
+    font-style: normal;
+
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a:hover{
+    color: red;
+}
+input,img,button{
+    margin:0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+}
+.w{
+    width: 1210px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clear{
+    zoom:1;
+}
+.layer{
+    height: 700px;
+    /*width: 400px;*/
+    background:url('../loginImages/wallhaven-56481.jpg');
+    /*padding-left: 760px;*/
+    padding-top: 50px;
+}
+
+.logo{
+    width: 380px;
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.logo_em{
+    font-size: 22px;
+    font-family:宋体;
+    color: white;
+  font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -22px;
+}
+#register{
+    width: 380px;
+    height: 550px;
+    background-color: white;
+}
+.line{
+    border: 1px solid lightgray;
+}
+#phone_register{
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+     padding-top: 17px;
+
+    /*padding-left: 50px;*/
+}
+#phone_register a{
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    float: left;
+}
+
+
+#phone_register .current{
+    border-bottom: 2px solid green;
+    cursor: pointer;
+    color: green;
+
+}
+.long_line{
+    /*margin-top: 15px;*/
+    padding-left: 23px;
+    border: 1px solid gray;
+}
+.box{
+    width: 328px;
+    margin: 0 auto;
+}
+.email_add{
+    margin-top: 30px;
+    height: 70px;
+}
+.email_add em{
+   float: left;
+    height: 30px;
+
+}
+.email_add input{
+    width: 320px;
+    height: 39px;
+    border: 1px solid lightgray;
+   /*color: #C6C6C6;*/
+    font-size: 14px;
+    padding-left: 7px;
+}
+#first_phone{
+    height: 39px;
+    border: 1px solid lightgray;
+    width: 185px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding-left: 7px;
+}
+#first{
+    height: 39px;
+    width: 120px;
+    float: left;
+    position:relative;
+   font-size: 26px;
+    color:gray;
+    border: 1px solid #ccc;
+}
+#first i{
+    height: 7px;
+    width: 17px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 17px;
+    left: 90px;
+}
+#first s{
+    height: 15px;
+    width: 19px;
+    display: inline-block;
+    position: absolute;
+    top: -21px;
+    right:0px;
+    font-size: 32px;
+}
+.yanzheng input{
+    width: 200px;
+    height: 39px;
+    border: 1px solid lightgray;
+    /*color: #C6C6C6;*/
+    font-size: 14px;
+    padding-left: 7px;
+}
+.yanzheng{
+    height: 70px;
+}
+.yanzheng em{
+  float: left;
+    height: 30px;
+    overflow: hidden;
+
+}
+.yanzheng .txt{
+    background-color:white;
+    width: 100px;
+    height: 38px;
+    border-radius: 5px;
+    font-family: Hiragino Sans GB;
+    color: white;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.send{
+    height: 70px;
+}
+.send input{
+    width: 200px;
+    height: 39px;
+    border: 1px solid lightgray;
+    /*color: #C6C6C6;*/
+    font-size: 14px;
+    padding-left: 7px;
+}
+
+.send button{
+    background-color: #3F9F5F;
+    width: 115px;
+    height: 38px;
+    border-radius: 5px;
+    font-family: Hiragino Sans GB;
+    color: white;
+    font-size: 14px;
+
+}
+.username em{
+    float: left;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #959595;
+    font-family: Hiragino Sans GB;
+}
+.username{
+    /*margin-top: 30px;*/
+}
+.username input{
+    width: 320px;
+    height: 39px;
+    border: 1px solid lightgray;
+    /*color: #C6C6C6;*/
+    font-size: 14px;
+    padding-left: 7px;
+}
+.password input{
+    width: 320px;
+    height: 39px;
+    border: 1px solid lightgray;
+    /*color: #C6C6C6;*/
+    font-size: 14px;
+    padding-left: 7px;
+}
+.password{
+    height: 60px;
+
+}
+.password em {
+    height: 15px;
+    float: left;
+}
+.ensure{
+    width: 320px;
+    height: 39px;
+    background-color: #3F9F5F;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: Hiragino Sans GB;
+}
+.ensure a{
+    color: #ffffff;
+}
+.has a{
+    font-family: Hiragino Sans GB;
+    color:#3F9F5F;
+
+    font-size: 14px;
+}
+.has em{
+    font-family: Hiragino Sans GB;
+    color:#959595;
+    font-size: 14px;
+}
+.has span{
+    margin-left: 25px;
+}
+.has{
+    margin-top: 13px;
+}
+.main{
+    width: 380px;
+    margin: 0 auto;
+}
+.regi_bottom{
+    height: 220px;
+    background-color: #363636;
+}
+
+.left{
+    float: left;
+    height: 140px;
+    padding-left: 250px;
+    margin-top: 30px;
+
+}
+dl{
+    float: left;
+    width: 140px;
+    color: white;
+}
+dd a{
+    height: 25px;
+    display: inline-block;
+    color:#959595;
+}
+ .left dt{
+    height: 25px;
+    color: #C2C2C2;
+}
+ .right{
+     float: left;
+     margin-top: 30px;
+ }
+ .right span{
+     color: #C2C2C2;
+ }
+ .a1{
+     width: 20px;
+     height: 20px;
+     display: inline-block;
+     background: url("../loginImages/headfoot.png") 0 -1082px no-repeat;
+ }
+.a2{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../loginImages/headfoot.png") -30px -1082px no-repeat;
+}
+.a3{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../loginImages/headfoot.png") -60px -1082px no-repeat;
+}
+.a4{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../loginImages/headfoot.png") -30px -1110px no-repeat;
+}
+.a5{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../loginImages/headfoot.png") -60px -1110px no-repeat;
+}
+.a6{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../loginImages/headfoot.png") 0 -1110px no-repeat;
+}
+.tu{
+    margin-top: 10px;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.bot{
+    padding-left: 250px;
+}
+.bot img{
+    float: left;
+}
+.bot p{
+    color: #959595;
+}
+.fix{
+    position: fixed;
+    top:30%;
+    right: 0px;
+}
+.fix span{
+    width: 40px;
+    height: 166px;
+    display: inline-block;
+    background: url("../loginImages/icons_feedback.png") -1px 0 no-repeat;
+}
+#big .no{
+    display: none;
+    /*height: 210px;*/
+    /*width: 330px;*/
+
+}
+#big .current{
+    display: block;
+}
+#register .name1{
+    background: url("../loginImages/error.png") left no-repeat;
+    font-size: 14px;
+    color: red;
+    width: 200px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-family:宋体;
+}
+
+#code{
+    font-family:Arial;
+    font-style:italic;
+    font-weight:bold;
+    border:0;
+    font-size:22px;
+    letter-spacing:5px;
+    color:blue;
+}
+
+#code1{
+    font-family:Arial;
+    font-style:italic;
+    font-weight:bold;
+    border:0;
+    font-size:22px;
+    letter-spacing:5px;
+    color:blue;
+}
+#stren{
+    position: absolute;
+    top:566px;
+   left: 699px;
+}
+#stren1{
+    position: absolute;
+    top:566px;
+    left: 699px;
+}
+.password{
+    /*position: relative;*/
+    /*position: absolute;*/
+    /*display: inline-block;*/
+
+}
+.strengthLv0 {
+    height: 6px;
+    width: 120px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.strengthLv1 {
+    background: red;
+    height: 6px;
+    width: 40px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.strengthLv2 {
+    background: orange;
+    height: 6px;
+    width: 80px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.strengthLv3 {
+    background: green;
+    height: 6px;
+    width: 120px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+#rece{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top:284px;
+    left:510px;
+    display: none;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    /*background-color: yellowgreen;*/
+}
+#rece_left{
+    width: 230px;
+    height: 250px;
+     position: relative;
+    border-right: 1px solid lightgray;
+    float: left;
+
+    background: #fff;
+
+
+}
+#rece_right{
+    width: 18px;
+    height: 250px;
+    position:relative;
+    float: right;
+
+}
+#scrool{
+    position: absolute;
+    top:0px;
+
+    left:0px;
+    width: 20px;
+    height: 80px;
+    border-radius:  10px;
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+#rece_left li{
+    font-size: 18px;
+    color: gray;
+    padding-left: 20px;
+
+}
+#mask{
+    width: 380px;
+    height: 550px;
+    position: absolute;
+    top: 134px;
+    left: 485px;
+
+    /*background: #000;*/
+    opacity: 0.15;
+    display: none;
+    background-color: red;
+}
+.fixx{
+
+    width: 40px;
+    height: 166px;
+    display: inline-block;
+    background-color: red;
+    /*background: url("../loginImages/icons_feedback.png") -40px 0 no-repeat;*/
+
+}
+#feedback{
+    /*width: 280px;*/
+    height: 250px;
+    position: absolute;
+    right:0px;
+    top:30%;
+    display: none;
+
+}
+#feedback span{
+    width: 40px;
+    height: 166px;
+    /*position: relative;*/
+    display: inline-block;
+    right: 280px;
+    float: left;
+    position: absolute;
+    margin-right: 10px;
+    background: url("../loginImages/icons_feedback.png") -40px 0 no-repeat;
+}
+#feed_top{
+    width: 250px;
+    height: 180px;
+    padding:10px;
+}
+#feed{
+    float: left;
+    background-color:white;
+    height: 250px;
+
+    padding:10px;
+    /*position: absolute;*/
+
+}
+#feed_bot em{
+    display: block;
+    margin-top: 10px;
+    color: gray;
+}
+#feed_bot input{
+    border: 1px solid #ccc;
+    width: 250px;
+    margin-top: 20px;
+    height: 30px;
+}
+#span{
+  width: 100px;
+    float: left;
+    font-family:Arial;
+    font-style:italic;
+    font-weight:bold;
+    border:0;
+    font-size:22px;
+    letter-spacing:5px;
+    color:blue;
+      }
+.send em{
+    /*float: right;*/
+
+    height: 30px;
+    /*display: inline-block;*/
+    margin-left: 50px;
+}
+.aa{
+    /*background: yellowgreen;*/
+    font-size: 20px;
+    color: pink;
+
+}

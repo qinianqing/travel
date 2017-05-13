@@ -1,0 +1,1609 @@
+/* 勋章浮动层 */
+.medal_tipslay1 { position:absolute; z-index:1999; top:0; left:0; float:left}
+.medal_tipslay1 .text { padding:8px 10px; border-radius:3px; background:#3e3e3e; color:#fff;}
+.medal_tipslay1 .arrow { width:100%;}
+.medal_tipslay1 .arrow span { display:block; width:0; height:0; margin:0 auto; overflow:hidden; border:6px solid transparent; border-top-color:#3e3e3e; border-bottom-width:0; }
+
+.medal_tipslay2 { position:absolute; z-index:1999; top:0; left:0; width:310px; border:1px solid #c0c0c0; box-shadow:0 2px 5px rgba(0,0,0,0.15); background:#fff;}
+.medal_tipslay2 .load { height:120px; background:#fff url(../../images/common/tpl/wait_34.gif) no-repeat center center;}
+.medal_tipslay2 .boxs { width:168px; padding:10px 10px 10px 130px; overflow:hidden;}
+.medal_tipslay2 .icon { float:left; margin-left:-120px;}
+.medal_tipslay2 .texts { padding:8px 0 7px; color:#636363;}
+.medal_tipslay2 .tit {font-size:18px; line-height: 22px;}
+.medal_tipslay2 .txt { padding-top:5px;}
+.medal_tipslay2 .arrow { position:absolute; left:149px; bottom:-6px; display:block; width:0; height:0; overflow:hidden; border:6px solid transparent; border-top-color:#c0c0c0; border-bottom-width:0; }
+.medal_tipslay2 .arrow2 { position:absolute; left:149px; bottom:-5px; display:block; width:0; height:0; overflow:hidden; border:6px solid transparent; border-top-color:#fff; border-bottom-width:0; }
+
+
+
+/* 勋章列表 ***********   100   ********** */
+
+/* 点评师 */
+.medal_popular_lv1_100 ,
+.medal_popular_lv2_100 ,
+.medal_popular_lv3_100 ,
+.medal_popular_lv4_100 ,
+.medal_popular_lv5_100 ,
+.medal_popular_lv6_100 ,
+.medal_popular_lv7_100 ,
+.medal_popular_lv8_100 ,
+.medal_popular_lv9_100 ,
+/* 点评师 */
+.medal_review_lv1_100 ,
+.medal_review_lv2_100 ,
+.medal_review_lv3_100 ,
+.medal_review_lv4_100 ,
+.medal_review_lv5_100 ,
+.medal_review_lv6_100 ,
+.medal_review_lv7_100 ,
+.medal_review_lv8_100 ,
+.medal_review_lv9_100 ,
+/* 传播者 */
+.medal_disseminators_lv1_100 ,
+.medal_disseminators_lv2_100 ,
+.medal_disseminators_lv3_100 ,
+.medal_disseminators_lv4_100 ,
+.medal_disseminators_lv5_100 ,
+.medal_disseminators_lv6_100 ,
+.medal_disseminators_lv7_100 ,
+.medal_disseminators_lv8_100 ,
+.medal_disseminators_lv9_100 ,
+/* 守望者 */
+.medal_watchmen_lv1_100 ,
+.medal_watchmen_lv2_100 ,
+.medal_watchmen_lv3_100 ,
+.medal_watchmen_lv4_100 ,
+.medal_watchmen_lv5_100 ,
+.medal_watchmen_lv6_100 ,
+.medal_watchmen_lv7_100 ,
+.medal_watchmen_lv8_100 ,
+.medal_watchmen_lv9_100 ,
+/* 淘金者 */
+.medal_goldrush_lv1_100 ,
+.medal_goldrush_lv2_100 ,
+.medal_goldrush_lv3_100 ,
+.medal_goldrush_lv4_100 ,
+.medal_goldrush_lv5_100 ,
+.medal_goldrush_lv6_100 ,
+.medal_goldrush_lv7_100 ,
+.medal_goldrush_lv8_100 ,
+.medal_goldrush_lv9_100 ,
+/* 响应者 */
+.medal_responder_lv1_100 ,
+.medal_responder_lv2_100 ,
+.medal_responder_lv3_100 ,
+.medal_responder_lv4_100 ,
+.medal_responder_lv5_100 ,
+.medal_responder_lv6_100 ,
+.medal_responder_lv7_100 ,
+.medal_responder_lv8_100 ,
+.medal_responder_lv9_100 ,
+/* 会员 */
+.medal_junior_100 ,
+/* 指路人 */
+.medal_roadman_lv1_100 ,
+.medal_roadman_lv2_100 ,
+.medal_roadman_lv3_100 ,
+.medal_roadman_lv4_100 ,
+.medal_roadman_lv5_100 ,
+.medal_roadman_lv6_100 ,
+.medal_roadman_lv7_100 ,
+.medal_roadman_lv8_100 ,
+.medal_roadman_lv9_100 ,
+/* 精华作品 */
+.medal_bestauthor_lv1_100 ,
+.medal_bestauthor_lv2_100 ,
+.medal_bestauthor_lv3_100 ,
+.medal_bestauthor_lv4_100 ,
+.medal_bestauthor_lv5_100 ,
+.medal_bestauthor_lv6_100 ,
+.medal_bestauthor_lv7_100 ,
+.medal_bestauthor_lv8_100 ,
+.medal_bestauthor_lv9_100 ,
+/* 开拓者 */
+.medal_exploiter_lv1_100 ,
+.medal_exploiter_lv2_100 ,
+.medal_exploiter_lv3_100 ,
+.medal_exploiter_lv4_100 ,
+.medal_exploiter_lv5_100 ,
+.medal_exploiter_lv6_100 ,
+.medal_exploiter_lv7_100 ,
+.medal_exploiter_lv8_100 ,
+.medal_exploiter_lv9_100 ,
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_100 ,
+.medal_coverphotographer_lv2_100 ,
+.medal_coverphotographer_lv3_100 ,
+.medal_coverphotographer_lv4_100 ,
+.medal_coverphotographer_lv5_100 ,
+.medal_coverphotographer_lv6_100 ,
+.medal_coverphotographer_lv7_100 ,
+.medal_coverphotographer_lv8_100 ,
+.medal_coverphotographer_lv9_100 ,
+/* 图书管理员 */
+.medal_librarian_lv1_100 ,
+.medal_librarian_lv2_100 ,
+.medal_librarian_lv3_100 ,
+.medal_librarian_lv4_100 ,
+.medal_librarian_lv5_100 ,
+.medal_librarian_lv6_100 ,
+.medal_librarian_lv7_100 ,
+.medal_librarian_lv8_100 ,
+.medal_librarian_lv9_100 ,
+/* 游记沙发客 */
+.medal_firstreplier_lv1_100 ,
+.medal_firstreplier_lv2_100 ,
+.medal_firstreplier_lv3_100 ,
+.medal_firstreplier_lv4_100 ,
+.medal_firstreplier_lv5_100 ,
+.medal_firstreplier_lv6_100 ,
+.medal_firstreplier_lv7_100 ,
+.medal_firstreplier_lv8_100 ,
+.medal_firstreplier_lv9_100 ,
+/* 问答沙发客 */
+.medal_firsanswer_lv1_100 ,
+.medal_firsanswer_lv2_100 ,
+.medal_firsanswer_lv3_100 ,
+.medal_firsanswer_lv4_100 ,
+.medal_firsanswer_lv5_100 ,
+.medal_firsanswer_lv6_100 ,
+.medal_firsanswer_lv7_100 ,
+.medal_firsanswer_lv8_100 ,
+.medal_firsanswer_lv9_100 ,
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_100 ,
+.medal_firstreviewer_lv2_100 ,
+.medal_firstreviewer_lv3_100 ,
+.medal_firstreviewer_lv4_100 ,
+.medal_firstreviewer_lv5_100 ,
+.medal_firstreviewer_lv6_100 ,
+.medal_firstreviewer_lv7_100 ,
+.medal_firstreviewer_lv8_100 ,
+.medal_firstreviewer_lv9_100 ,
+/* 线下沙龙主讲人 */
+.medal_salon_100 ,
+/* 锦囊作者 */
+.medal_guideauthor_100 ,
+/* 现任版主 */
+.medal_forummaster_100 ,
+/* 老版主 */
+.medal_exforummaster_100 ,
+/* 点评排名 */
+.medal_reviewerrank_100 ,
+/* 图片排名 */
+.medal_photographerrank_100 ,
+/* 回答排名 */
+.medal_answerrank_100 {
+	width:100px; height:100px; display:inline-block; background:url(../../images/user2/medal/medal_icon_100.png) no-repeat;
+}
+/* 未名勋章 */
+.medal_popular_lv1_100 { background-position:0px -1400px;}
+.medal_popular_lv2_100 { background-position:-100px -1400px;}
+.medal_popular_lv3_100 { background-position:-200px -1400px;}
+.medal_popular_lv4_100 { background-position:-300px -1400px;}
+.medal_popular_lv5_100 { background-position:-400px -1400px;}
+.medal_popular_lv6_100 { background-position:-500px -1400px;}
+.medal_popular_lv7_100 { background-position:-600px -1400px;}
+.medal_popular_lv8_100 { background-position:-700px -1400px;}
+.medal_popular_lv9_100 { background-position:-800px -1400px;}
+/* 点评师 */
+.medal_review_lv1_100 { background-position:0px 0px;}
+.medal_review_lv2_100 { background-position:-100px 0px;}
+.medal_review_lv3_100 { background-position:-200px 0px;}
+.medal_review_lv4_100 { background-position:-300px 0px;}
+.medal_review_lv5_100 { background-position:-400px 0px;}
+.medal_review_lv6_100 { background-position:-500px 0px;}
+.medal_review_lv7_100 { background-position:-600px 0px;}
+.medal_review_lv8_100 { background-position:-700px 0px;}
+.medal_review_lv9_100 { background-position:-800px 0px;}
+/* 传播者 */
+.medal_disseminators_lv1_100 { background-position:0px -100px;}
+.medal_disseminators_lv2_100 { background-position:-100px -100px;}
+.medal_disseminators_lv3_100 { background-position:-200px -100px;}
+.medal_disseminators_lv4_100 { background-position:-300px -100px;}
+.medal_disseminators_lv5_100 { background-position:-400px -100px;}
+.medal_disseminators_lv6_100 { background-position:-500px -100px;}
+.medal_disseminators_lv7_100 { background-position:-600px -100px;}
+.medal_disseminators_lv8_100 { background-position:-700px -100px;}
+.medal_disseminators_lv9_100 { background-position:-800px -100px;}
+/* 守望者 */
+.medal_watchmen_lv1_100 { background-position:0px -200px;}
+.medal_watchmen_lv2_100 { background-position:-100px -200px;}
+.medal_watchmen_lv3_100 { background-position:-200px -200px;}
+.medal_watchmen_lv4_100 { background-position:-300px -200px;}
+.medal_watchmen_lv5_100 { background-position:-400px -200px;}
+.medal_watchmen_lv6_100 { background-position:-500px -200px;}
+.medal_watchmen_lv7_100 { background-position:-600px -200px;}
+.medal_watchmen_lv8_100 { background-position:-700px -200px;}
+.medal_watchmen_lv9_100 { background-position:-800px -200px;}
+/* 淘金者 */
+.medal_goldrush_lv1_100 { background-position:0px -300px;}
+.medal_goldrush_lv2_100 { background-position:-100px -300px;}
+.medal_goldrush_lv3_100 { background-position:-200px -300px;}
+.medal_goldrush_lv4_100 { background-position:-300px -300px;}
+.medal_goldrush_lv5_100 { background-position:-400px -300px;}
+.medal_goldrush_lv6_100 { background-position:-500px -300px;}
+.medal_goldrush_lv7_100 { background-position:-600px -300px;}
+.medal_goldrush_lv8_100 { background-position:-700px -300px;}
+.medal_goldrush_lv9_100 { background-position:-800px -300px;}
+/* 响应者 */
+.medal_responder_lv1_100 { background-position:0px -400px;}
+.medal_responder_lv2_100 { background-position:-100px -400px;}
+.medal_responder_lv3_100 { background-position:-200px -400px;}
+.medal_responder_lv4_100 { background-position:-300px -400px;}
+.medal_responder_lv5_100 { background-position:-400px -400px;}
+.medal_responder_lv6_100 { background-position:-500px -400px;}
+.medal_responder_lv7_100 { background-position:-600px -400px;}
+.medal_responder_lv8_100 { background-position:-700px -400px;}
+.medal_responder_lv9_100 { background-position:-800px -400px;}
+/* 会员 */
+.medal_junior_100 { background-position:0px -500px;}
+/* 指路人 */
+.medal_roadman_lv1_100 { background-position:0px -600px;}
+.medal_roadman_lv2_100 { background-position:-100px -600px;}
+.medal_roadman_lv3_100 { background-position:-200px -600px;}
+.medal_roadman_lv4_100 { background-position:-300px -600px;}
+.medal_roadman_lv5_100 { background-position:-400px -600px;}
+.medal_roadman_lv6_100 { background-position:-500px -600px;}
+.medal_roadman_lv7_100 { background-position:-600px -600px;}
+.medal_roadman_lv8_100 { background-position:-700px -600px;}
+.medal_roadman_lv9_100 { background-position:-800px -600px;}
+/* 精华作品 */
+.medal_bestauthor_lv1_100 { background-position:0px -700px;}
+.medal_bestauthor_lv2_100 { background-position:-100px -700px;}
+.medal_bestauthor_lv3_100 { background-position:-200px -700px;}
+.medal_bestauthor_lv4_100 { background-position:-300px -700px;}
+.medal_bestauthor_lv5_100 { background-position:-400px -700px;}
+.medal_bestauthor_lv6_100 { background-position:-500px -700px;}
+.medal_bestauthor_lv7_100 { background-position:-600px -700px;}
+.medal_bestauthor_lv8_100 { background-position:-700px -700px;}
+.medal_bestauthor_lv9_100 { background-position:-800px -700px;}
+/* 开拓者 */
+.medal_exploiter_lv1_100 { background-position:0px -800px;}
+.medal_exploiter_lv2_100 { background-position:-100px -800px;}
+.medal_exploiter_lv3_100 { background-position:-200px -800px;}
+.medal_exploiter_lv4_100 { background-position:-300px -800px;}
+.medal_exploiter_lv5_100 { background-position:-400px -800px;}
+.medal_exploiter_lv6_100 { background-position:-500px -800px;}
+.medal_exploiter_lv7_100 { background-position:-600px -800px;}
+.medal_exploiter_lv8_100 { background-position:-700px -800px;}
+.medal_exploiter_lv9_100 { background-position:-800px -800px;}
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_100 { background-position:0px -900px;}
+.medal_coverphotographer_lv2_100 { background-position:-100px -900px;}
+.medal_coverphotographer_lv3_100 { background-position:-200px -900px;}
+.medal_coverphotographer_lv4_100 { background-position:-300px -900px;}
+.medal_coverphotographer_lv5_100 { background-position:-400px -900px;}
+.medal_coverphotographer_lv6_100 { background-position:-500px -900px;}
+.medal_coverphotographer_lv7_100 { background-position:-600px -900px;}
+.medal_coverphotographer_lv8_100 { background-position:-700px -900px;}
+.medal_coverphotographer_lv9_100 { background-position:-800px -900px;}
+/* 图书管理员 */
+.medal_librarian_lv1_100 { background-position:0px -1000px;}
+.medal_librarian_lv2_100 { background-position:-100px -1000px;}
+.medal_librarian_lv3_100 { background-position:-200px -1000px;}
+.medal_librarian_lv4_100 { background-position:-300px -1000px;}
+.medal_librarian_lv5_100 { background-position:-400px -1000px;}
+.medal_librarian_lv6_100 { background-position:-500px -1000px;}
+.medal_librarian_lv7_100 { background-position:-600px -1000px;}
+.medal_librarian_lv8_100 { background-position:-700px -1000px;}
+.medal_librarian_lv9_100 { background-position:-800px -1000px;}
+/* 游记沙发客 */
+.medal_firstreplier_lv1_100 { background-position:0px -1100px;}
+.medal_firstreplier_lv2_100 { background-position:-100px -1100px;}
+.medal_firstreplier_lv3_100 { background-position:-200px -1100px;}
+.medal_firstreplier_lv4_100 { background-position:-300px -1100px;}
+.medal_firstreplier_lv5_100 { background-position:-400px -1100px;}
+.medal_firstreplier_lv6_100 { background-position:-500px -1100px;}
+.medal_firstreplier_lv7_100 { background-position:-600px -1100px;}
+.medal_firstreplier_lv8_100 { background-position:-700px -1100px;}
+.medal_firstreplier_lv9_100 { background-position:-800px -1100px;}
+/* 问答沙发客 */
+.medal_firsanswer_lv1_100 { background-position:0px -1200px;}
+.medal_firsanswer_lv2_100 { background-position:-100px -1200px;}
+.medal_firsanswer_lv3_100 { background-position:-200px -1200px;}
+.medal_firsanswer_lv4_100 { background-position:-300px -1200px;}
+.medal_firsanswer_lv5_100 { background-position:-400px -1200px;}
+.medal_firsanswer_lv6_100 { background-position:-500px -1200px;}
+.medal_firsanswer_lv7_100 { background-position:-600px -1200px;}
+.medal_firsanswer_lv8_100 { background-position:-700px -1200px;}
+.medal_firsanswer_lv9_100 { background-position:-800px -1200px;}
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_100 { background-position:0px -1300px;}
+.medal_firstreviewer_lv2_100 { background-position:-100px -1300px;}
+.medal_firstreviewer_lv3_100 { background-position:-200px -1300px;}
+.medal_firstreviewer_lv4_100 { background-position:-300px -1300px;}
+.medal_firstreviewer_lv5_100 { background-position:-400px -1300px;}
+.medal_firstreviewer_lv6_100 { background-position:-500px -1300px;}
+.medal_firstreviewer_lv7_100 { background-position:-600px -1300px;}
+.medal_firstreviewer_lv8_100 { background-position:-700px -1300px;}
+.medal_firstreviewer_lv9_100 { background-position:-800px -1300px;}
+/* 线下沙龙主讲人 */
+.medal_salon_100 { background-position:-100px -500px;}
+/* 锦囊作者 */
+.medal_guideauthor_100 { background-position:-200px -500px;}
+/* 现任版主 */
+.medal_forummaster_100 { background-position:-300px -500px;}
+/* 老版主 */
+.medal_exforummaster_100 { background-position:-400px -500px;}
+/* 点评排名 */
+.medal_reviewerrank_100 { background-position:-500px -500px;}
+/* 图片排名 */
+.medal_photographerrank_100 { background-position:-600px -500px;}
+/* 回答排名 */
+.medal_answerrank_100 { background-position:-700px -500px}
+
+
+/* 勋章列表 ***********   80   ********** */
+
+/* 点评师 */
+.medal_popular_lv1_80 ,
+.medal_popular_lv2_80 ,
+.medal_popular_lv3_80 ,
+.medal_popular_lv4_80 ,
+.medal_popular_lv5_80 ,
+.medal_popular_lv6_80 ,
+.medal_popular_lv7_80 ,
+.medal_popular_lv8_80 ,
+.medal_popular_lv9_80 ,
+/* 点评师 */
+.medal_review_lv1_80 ,
+.medal_review_lv2_80 ,
+.medal_review_lv3_80 ,
+.medal_review_lv4_80 ,
+.medal_review_lv5_80 ,
+.medal_review_lv6_80 ,
+.medal_review_lv7_80 ,
+.medal_review_lv8_80 ,
+.medal_review_lv9_80 ,
+/* 传播者 */
+.medal_disseminators_lv1_80 ,
+.medal_disseminators_lv2_80 ,
+.medal_disseminators_lv3_80 ,
+.medal_disseminators_lv4_80 ,
+.medal_disseminators_lv5_80 ,
+.medal_disseminators_lv6_80 ,
+.medal_disseminators_lv7_80 ,
+.medal_disseminators_lv8_80 ,
+.medal_disseminators_lv9_80 ,
+/* 守望者 */
+.medal_watchmen_lv1_80 ,
+.medal_watchmen_lv2_80 ,
+.medal_watchmen_lv3_80 ,
+.medal_watchmen_lv4_80 ,
+.medal_watchmen_lv5_80 ,
+.medal_watchmen_lv6_80 ,
+.medal_watchmen_lv7_80 ,
+.medal_watchmen_lv8_80 ,
+.medal_watchmen_lv9_80 ,
+/* 淘金者 */
+.medal_goldrush_lv1_80 ,
+.medal_goldrush_lv2_80 ,
+.medal_goldrush_lv3_80 ,
+.medal_goldrush_lv4_80 ,
+.medal_goldrush_lv5_80 ,
+.medal_goldrush_lv6_80 ,
+.medal_goldrush_lv7_80 ,
+.medal_goldrush_lv8_80 ,
+.medal_goldrush_lv9_80 ,
+/* 响应者 */
+.medal_responder_lv1_80 ,
+.medal_responder_lv2_80 ,
+.medal_responder_lv3_80 ,
+.medal_responder_lv4_80 ,
+.medal_responder_lv5_80 ,
+.medal_responder_lv6_80 ,
+.medal_responder_lv7_80 ,
+.medal_responder_lv8_80 ,
+.medal_responder_lv9_80 ,
+/* 会员 */
+.medal_junior_80 ,
+/* 指路人 */
+.medal_roadman_lv1_80 ,
+.medal_roadman_lv2_80 ,
+.medal_roadman_lv3_80 ,
+.medal_roadman_lv4_80 ,
+.medal_roadman_lv5_80 ,
+.medal_roadman_lv6_80 ,
+.medal_roadman_lv7_80 ,
+.medal_roadman_lv8_80 ,
+.medal_roadman_lv9_80 ,
+/* 精华作品 */
+.medal_bestauthor_lv1_80 ,
+.medal_bestauthor_lv2_80 ,
+.medal_bestauthor_lv3_80 ,
+.medal_bestauthor_lv4_80 ,
+.medal_bestauthor_lv5_80 ,
+.medal_bestauthor_lv6_80 ,
+.medal_bestauthor_lv7_80 ,
+.medal_bestauthor_lv8_80 ,
+.medal_bestauthor_lv9_80 ,
+/* 开拓者 */
+.medal_exploiter_lv1_80 ,
+.medal_exploiter_lv2_80 ,
+.medal_exploiter_lv3_80 ,
+.medal_exploiter_lv4_80 ,
+.medal_exploiter_lv5_80 ,
+.medal_exploiter_lv6_80 ,
+.medal_exploiter_lv7_80 ,
+.medal_exploiter_lv8_80 ,
+.medal_exploiter_lv9_80 ,
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_80 ,
+.medal_coverphotographer_lv2_80 ,
+.medal_coverphotographer_lv3_80 ,
+.medal_coverphotographer_lv4_80 ,
+.medal_coverphotographer_lv5_80 ,
+.medal_coverphotographer_lv6_80 ,
+.medal_coverphotographer_lv7_80 ,
+.medal_coverphotographer_lv8_80 ,
+.medal_coverphotographer_lv9_80 ,
+/* 图书管理员 */
+.medal_librarian_lv1_80 ,
+.medal_librarian_lv2_80 ,
+.medal_librarian_lv3_80 ,
+.medal_librarian_lv4_80 ,
+.medal_librarian_lv5_80 ,
+.medal_librarian_lv6_80 ,
+.medal_librarian_lv7_80 ,
+.medal_librarian_lv8_80 ,
+.medal_librarian_lv9_80 ,
+/* 游记沙发客 */
+.medal_firstreplier_lv1_80 ,
+.medal_firstreplier_lv2_80 ,
+.medal_firstreplier_lv3_80 ,
+.medal_firstreplier_lv4_80 ,
+.medal_firstreplier_lv5_80 ,
+.medal_firstreplier_lv6_80 ,
+.medal_firstreplier_lv7_80 ,
+.medal_firstreplier_lv8_80 ,
+.medal_firstreplier_lv9_80 ,
+/* 问答沙发客 */
+.medal_firsanswer_lv1_80 ,
+.medal_firsanswer_lv2_80 ,
+.medal_firsanswer_lv3_80 ,
+.medal_firsanswer_lv4_80 ,
+.medal_firsanswer_lv5_80 ,
+.medal_firsanswer_lv6_80 ,
+.medal_firsanswer_lv7_80 ,
+.medal_firsanswer_lv8_80 ,
+.medal_firsanswer_lv9_80 ,
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_80 ,
+.medal_firstreviewer_lv2_80 ,
+.medal_firstreviewer_lv3_80 ,
+.medal_firstreviewer_lv4_80 ,
+.medal_firstreviewer_lv5_80 ,
+.medal_firstreviewer_lv6_80 ,
+.medal_firstreviewer_lv7_80 ,
+.medal_firstreviewer_lv8_80 ,
+.medal_firstreviewer_lv9_80 ,
+/* 线下沙龙主讲人 */
+.medal_salon_80 ,
+/* 锦囊作者 */
+.medal_guideauthor_80 ,
+/* 现任版主 */
+.medal_forummaster_80 ,
+/* 老版主 */
+.medal_exforummaster_80 ,
+/* 点评排名 */
+.medal_reviewerrank_80 ,
+/* 图片排名 */
+.medal_photographerrank_80 ,
+/* 回答排名 */
+.medal_answerrank_80 {
+	width:80px; height:80px; display:inline-block; background:url(../../images/user2/medal/medal_icon_80.png) no-repeat;
+}
+/* 未名勋章 */
+.medal_popular_lv1_80 { background-position:0px -1120px;}
+.medal_popular_lv2_80 { background-position:-80px -1120px;}
+.medal_popular_lv3_80 { background-position:-160px -1120px;}
+.medal_popular_lv4_80 { background-position:-240px -1120px;}
+.medal_popular_lv5_80 { background-position:-320px -1120px;}
+.medal_popular_lv6_80 { background-position:-400px -1120px;}
+.medal_popular_lv7_80 { background-position:-480px -1120px;}
+.medal_popular_lv8_80 { background-position:-560px -1120px;}
+.medal_popular_lv9_80 { background-position:-640px -1120px;}
+/* 点评师 */
+.medal_review_lv1_80 { background-position:0px 0px;}
+.medal_review_lv2_80 { background-position:-80px 0px;}
+.medal_review_lv3_80 { background-position:-160px 0px;}
+.medal_review_lv4_80 { background-position:-240px 0px;}
+.medal_review_lv5_80 { background-position:-320px 0px;}
+.medal_review_lv6_80 { background-position:-400px 0px;}
+.medal_review_lv7_80 { background-position:-480px 0px;}
+.medal_review_lv8_80 { background-position:-560px 0px;}
+.medal_review_lv9_80 { background-position:-640px 0px;}
+/* 传播者 */
+.medal_disseminators_lv1_80 { background-position:0px -80px;}
+.medal_disseminators_lv2_80 { background-position:-80px -80px;}
+.medal_disseminators_lv3_80 { background-position:-160px -80px;}
+.medal_disseminators_lv4_80 { background-position:-240px -80px;}
+.medal_disseminators_lv5_80 { background-position:-320px -80px;}
+.medal_disseminators_lv6_80 { background-position:-400px -80px;}
+.medal_disseminators_lv7_80 { background-position:-480px -80px;}
+.medal_disseminators_lv8_80 { background-position:-560px -80px;}
+.medal_disseminators_lv9_80 { background-position:-640px -80px;}
+/* 守望者 */
+.medal_watchmen_lv1_80 { background-position:0px -160px;}
+.medal_watchmen_lv2_80 { background-position:-80px -160px;}
+.medal_watchmen_lv3_80 { background-position:-160px -160px;}
+.medal_watchmen_lv4_80 { background-position:-240px -160px;}
+.medal_watchmen_lv5_80 { background-position:-320px -160px;}
+.medal_watchmen_lv6_80 { background-position:-400px -160px;}
+.medal_watchmen_lv7_80 { background-position:-480px -160px;}
+.medal_watchmen_lv8_80 { background-position:-560px -160px;}
+.medal_watchmen_lv9_80 { background-position:-640px -160px;}
+/* 淘金者 */
+.medal_goldrush_lv1_80 { background-position:0px -240px;}
+.medal_goldrush_lv2_80 { background-position:-80px -240px;}
+.medal_goldrush_lv3_80 { background-position:-160px -240px;}
+.medal_goldrush_lv4_80 { background-position:-240px -240px;}
+.medal_goldrush_lv5_80 { background-position:-320px -240px;}
+.medal_goldrush_lv6_80 { background-position:-400px -240px;}
+.medal_goldrush_lv7_80 { background-position:-480px -240px;}
+.medal_goldrush_lv8_80 { background-position:-560px -240px;}
+.medal_goldrush_lv9_80 { background-position:-640px -240px;}
+/* 响应者 */
+.medal_responder_lv1_80 { background-position:0px -320px;}
+.medal_responder_lv2_80 { background-position:-80px -320px;}
+.medal_responder_lv3_80 { background-position:-160px -320px;}
+.medal_responder_lv4_80 { background-position:-240px -320px;}
+.medal_responder_lv5_80 { background-position:-320px -320px;}
+.medal_responder_lv6_80 { background-position:-400px -320px;}
+.medal_responder_lv7_80 { background-position:-480px -320px;}
+.medal_responder_lv8_80 { background-position:-560px -320px;}
+.medal_responder_lv9_80 { background-position:-640px -320px;}
+/* 会员 */
+.medal_junior_80 { background-position:0px -400px;}
+/* 指路人 */
+.medal_roadman_lv1_80 { background-position:0px -480px;}
+.medal_roadman_lv2_80 { background-position:-80px -480px;}
+.medal_roadman_lv3_80 { background-position:-160px -480px;}
+.medal_roadman_lv4_80 { background-position:-240px -480px;}
+.medal_roadman_lv5_80 { background-position:-320px -480px;}
+.medal_roadman_lv6_80 { background-position:-400px -480px;}
+.medal_roadman_lv7_80 { background-position:-480px -480px;}
+.medal_roadman_lv8_80 { background-position:-560px -480px;}
+.medal_roadman_lv9_80 { background-position:-640px -480px;}
+/* 精华作品 */
+.medal_bestauthor_lv1_80 { background-position:0px -560px;}
+.medal_bestauthor_lv2_80 { background-position:-80px -560px;}
+.medal_bestauthor_lv3_80 { background-position:-160px -560px;}
+.medal_bestauthor_lv4_80 { background-position:-240px -560px;}
+.medal_bestauthor_lv5_80 { background-position:-320px -560px;}
+.medal_bestauthor_lv6_80 { background-position:-400px -560px;}
+.medal_bestauthor_lv7_80 { background-position:-480px -560px;}
+.medal_bestauthor_lv8_80 { background-position:-560px -560px;}
+.medal_bestauthor_lv9_80 { background-position:-640px -560px;}
+/* 开拓者 */
+.medal_exploiter_lv1_80 { background-position:0px -640px;}
+.medal_exploiter_lv2_80 { background-position:-80px -640px;}
+.medal_exploiter_lv3_80 { background-position:-160px -640px;}
+.medal_exploiter_lv4_80 { background-position:-240px -640px;}
+.medal_exploiter_lv5_80 { background-position:-320px -640px;}
+.medal_exploiter_lv6_80 { background-position:-400px -640px;}
+.medal_exploiter_lv7_80 { background-position:-480px -640px;}
+.medal_exploiter_lv8_80 { background-position:-560px -640px;}
+.medal_exploiter_lv9_80 { background-position:-640px -640px;}
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_80 { background-position:0px -720px;}
+.medal_coverphotographer_lv2_80 { background-position:-80px -720px;}
+.medal_coverphotographer_lv3_80 { background-position:-160px -720px;}
+.medal_coverphotographer_lv4_80 { background-position:-240px -720px;}
+.medal_coverphotographer_lv5_80 { background-position:-320px -720px;}
+.medal_coverphotographer_lv6_80 { background-position:-400px -720px;}
+.medal_coverphotographer_lv7_80 { background-position:-480px -720px;}
+.medal_coverphotographer_lv8_80 { background-position:-560px -720px;}
+.medal_coverphotographer_lv9_80 { background-position:-640px -720px;}
+/* 图书管理员 */
+.medal_librarian_lv1_80 { background-position:0px -800px;}
+.medal_librarian_lv2_80 { background-position:-80px -800px;}
+.medal_librarian_lv3_80 { background-position:-160px -800px;}
+.medal_librarian_lv4_80 { background-position:-240px -800px;}
+.medal_librarian_lv5_80 { background-position:-320px -800px;}
+.medal_librarian_lv6_80 { background-position:-400px -800px;}
+.medal_librarian_lv7_80 { background-position:-480px -800px;}
+.medal_librarian_lv8_80 { background-position:-560px -800px;}
+.medal_librarian_lv9_80 { background-position:-640px -800px;}
+/* 游记沙发客 */
+.medal_firstreplier_lv1_80 { background-position:0px -880px;}
+.medal_firstreplier_lv2_80 { background-position:-80px -880px;}
+.medal_firstreplier_lv3_80 { background-position:-160px -880px;}
+.medal_firstreplier_lv4_80 { background-position:-240px -880px;}
+.medal_firstreplier_lv5_80 { background-position:-320px -880px;}
+.medal_firstreplier_lv6_80 { background-position:-400px -880px;}
+.medal_firstreplier_lv7_80 { background-position:-480px -880px;}
+.medal_firstreplier_lv8_80 { background-position:-560px -880px;}
+.medal_firstreplier_lv9_80 { background-position:-640px -880px;}
+/* 问答沙发客 */
+.medal_firsanswer_lv1_80 { background-position:0px -960px;}
+.medal_firsanswer_lv2_80 { background-position:-80px -960px;}
+.medal_firsanswer_lv3_80 { background-position:-160px -960px;}
+.medal_firsanswer_lv4_80 { background-position:-240px -960px;}
+.medal_firsanswer_lv5_80 { background-position:-320px -960px;}
+.medal_firsanswer_lv6_80 { background-position:-400px -960px;}
+.medal_firsanswer_lv7_80 { background-position:-480px -960px;}
+.medal_firsanswer_lv8_80 { background-position:-560px -960px;}
+.medal_firsanswer_lv9_80 { background-position:-640px -960px;}
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_80 { background-position:0px -1040px;}
+.medal_firstreviewer_lv2_80 { background-position:-80px -1040px;}
+.medal_firstreviewer_lv3_80 { background-position:-160px -1040px;}
+.medal_firstreviewer_lv4_80 { background-position:-240px -1040px;}
+.medal_firstreviewer_lv5_80 { background-position:-320px -1040px;}
+.medal_firstreviewer_lv6_80 { background-position:-400px -1040px;}
+.medal_firstreviewer_lv7_80 { background-position:-480px -1040px;}
+.medal_firstreviewer_lv8_80 { background-position:-560px -1040px;}
+.medal_firstreviewer_lv9_80 { background-position:-640px -1040px;}
+/* 线下沙龙主讲人 */
+.medal_salon_80 { background-position:-80px -400px;}
+/* 锦囊作者 */
+.medal_guideauthor_80 { background-position:-160px -400px;}
+/* 现任版主 */
+.medal_forummaster_80 { background-position:-240px -400px;}
+/* 老版主 */
+.medal_exforummaster_80 { background-position:-320px -400px;}
+/* 点评排名 */
+.medal_reviewerrank_80 { background-position:-400px -400px;}
+/* 图片排名 */
+.medal_photographerrank_80 { background-position:-480px -400px;}
+/* 回答排名 */
+.medal_answerrank_80 { background-position:-560px -400px}
+
+
+
+/* 勋章列表 ***********   60   ********** */
+
+/* 未名勋章 */
+.medal_popular_lv1_60 ,
+.medal_popular_lv2_60 ,
+.medal_popular_lv3_60 ,
+.medal_popular_lv4_60 ,
+.medal_popular_lv5_60 ,
+.medal_popular_lv6_60 ,
+.medal_popular_lv7_60 ,
+.medal_popular_lv8_60 ,
+.medal_popular_lv9_60 ,
+/* 点评师 */
+.medal_review_lv1_60 ,
+.medal_review_lv2_60 ,
+.medal_review_lv3_60 ,
+.medal_review_lv4_60 ,
+.medal_review_lv5_60 ,
+.medal_review_lv6_60 ,
+.medal_review_lv7_60 ,
+.medal_review_lv8_60 ,
+.medal_review_lv9_60 ,
+/* 传播者 */
+.medal_disseminators_lv1_60 ,
+.medal_disseminators_lv2_60 ,
+.medal_disseminators_lv3_60 ,
+.medal_disseminators_lv4_60 ,
+.medal_disseminators_lv5_60 ,
+.medal_disseminators_lv6_60 ,
+.medal_disseminators_lv7_60 ,
+.medal_disseminators_lv8_60 ,
+.medal_disseminators_lv9_60 ,
+/* 守望者 */
+.medal_watchmen_lv1_60 ,
+.medal_watchmen_lv2_60 ,
+.medal_watchmen_lv3_60 ,
+.medal_watchmen_lv4_60 ,
+.medal_watchmen_lv5_60 ,
+.medal_watchmen_lv6_60 ,
+.medal_watchmen_lv7_60 ,
+.medal_watchmen_lv8_60 ,
+.medal_watchmen_lv9_60 ,
+/* 淘金者 */
+.medal_goldrush_lv1_60 ,
+.medal_goldrush_lv2_60 ,
+.medal_goldrush_lv3_60 ,
+.medal_goldrush_lv4_60 ,
+.medal_goldrush_lv5_60 ,
+.medal_goldrush_lv6_60 ,
+.medal_goldrush_lv7_60 ,
+.medal_goldrush_lv8_60 ,
+.medal_goldrush_lv9_60 ,
+/* 响应者 */
+.medal_responder_lv1_60 ,
+.medal_responder_lv2_60 ,
+.medal_responder_lv3_60 ,
+.medal_responder_lv4_60 ,
+.medal_responder_lv5_60 ,
+.medal_responder_lv6_60 ,
+.medal_responder_lv7_60 ,
+.medal_responder_lv8_60 ,
+.medal_responder_lv9_60 ,
+/* 会员 */
+.medal_junior_60 ,
+/* 指路人 */
+.medal_roadman_lv1_60 ,
+.medal_roadman_lv2_60 ,
+.medal_roadman_lv3_60 ,
+.medal_roadman_lv4_60 ,
+.medal_roadman_lv5_60 ,
+.medal_roadman_lv6_60 ,
+.medal_roadman_lv7_60 ,
+.medal_roadman_lv8_60 ,
+.medal_roadman_lv9_60 ,
+/* 精华作品 */
+.medal_bestauthor_lv1_60 ,
+.medal_bestauthor_lv2_60 ,
+.medal_bestauthor_lv3_60 ,
+.medal_bestauthor_lv4_60 ,
+.medal_bestauthor_lv5_60 ,
+.medal_bestauthor_lv6_60 ,
+.medal_bestauthor_lv7_60 ,
+.medal_bestauthor_lv8_60 ,
+.medal_bestauthor_lv9_60 ,
+/* 开拓者 */
+.medal_exploiter_lv1_60 ,
+.medal_exploiter_lv2_60 ,
+.medal_exploiter_lv3_60 ,
+.medal_exploiter_lv4_60 ,
+.medal_exploiter_lv5_60 ,
+.medal_exploiter_lv6_60 ,
+.medal_exploiter_lv7_60 ,
+.medal_exploiter_lv8_60 ,
+.medal_exploiter_lv9_60 ,
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_60 ,
+.medal_coverphotographer_lv2_60 ,
+.medal_coverphotographer_lv3_60 ,
+.medal_coverphotographer_lv4_60 ,
+.medal_coverphotographer_lv5_60 ,
+.medal_coverphotographer_lv6_60 ,
+.medal_coverphotographer_lv7_60 ,
+.medal_coverphotographer_lv8_60 ,
+.medal_coverphotographer_lv9_60 ,
+/* 图书管理员 */
+.medal_librarian_lv1_60 ,
+.medal_librarian_lv2_60 ,
+.medal_librarian_lv3_60 ,
+.medal_librarian_lv4_60 ,
+.medal_librarian_lv5_60 ,
+.medal_librarian_lv6_60 ,
+.medal_librarian_lv7_60 ,
+.medal_librarian_lv8_60 ,
+.medal_librarian_lv9_60 ,
+/* 游记沙发客 */
+.medal_firstreplier_lv1_60 ,
+.medal_firstreplier_lv2_60 ,
+.medal_firstreplier_lv3_60 ,
+.medal_firstreplier_lv4_60 ,
+.medal_firstreplier_lv5_60 ,
+.medal_firstreplier_lv6_60 ,
+.medal_firstreplier_lv7_60 ,
+.medal_firstreplier_lv8_60 ,
+.medal_firstreplier_lv9_60 ,
+/* 问答沙发客 */
+.medal_firsanswer_lv1_60 ,
+.medal_firsanswer_lv2_60 ,
+.medal_firsanswer_lv3_60 ,
+.medal_firsanswer_lv4_60 ,
+.medal_firsanswer_lv5_60 ,
+.medal_firsanswer_lv6_60 ,
+.medal_firsanswer_lv7_60 ,
+.medal_firsanswer_lv8_60 ,
+.medal_firsanswer_lv9_60 ,
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_60 ,
+.medal_firstreviewer_lv2_60 ,
+.medal_firstreviewer_lv3_60 ,
+.medal_firstreviewer_lv4_60 ,
+.medal_firstreviewer_lv5_60 ,
+.medal_firstreviewer_lv6_60 ,
+.medal_firstreviewer_lv7_60 ,
+.medal_firstreviewer_lv8_60 ,
+.medal_firstreviewer_lv9_60 ,
+/* 线下沙龙主讲人 */
+.medal_salon_60 ,
+/* 锦囊作者 */
+.medal_guideauthor_60 ,
+/* 现任版主 */
+.medal_forummaster_60 ,
+/* 老版主 */
+.medal_exforummaster_60 ,
+/* 点评排名 */
+.medal_reviewerrank_60 ,
+/* 图片排名 */
+.medal_photographerrank_60 ,
+/* 回答排名 */
+.medal_answerrank_60 {
+	width:60px; height:60px; display:inline-block; background:url(../../images/user2/medal/medal_icon_60.png) no-repeat;
+}
+/* 未名勋章 */
+.medal_popular_lv1_60 { background-position:0px -840px;}
+.medal_popular_lv2_60 { background-position:-60px -840px;}
+.medal_popular_lv3_60 { background-position:-120px -840px;}
+.medal_popular_lv4_60 { background-position:-180px -840px;}
+.medal_popular_lv5_60 { background-position:-240px -840px;}
+.medal_popular_lv6_60 { background-position:-300px -840px;}
+.medal_popular_lv7_60 { background-position:-360px -840px;}
+.medal_popular_lv8_60 { background-position:-420px -840px;}
+.medal_popular_lv9_60 { background-position:-480px -840px;}
+/* 点评师 */
+.medal_review_lv1_60 { background-position:0px 0px;}
+.medal_review_lv2_60 { background-position:-60px 0px;}
+.medal_review_lv3_60 { background-position:-120px 0px;}
+.medal_review_lv4_60 { background-position:-180px 0px;}
+.medal_review_lv5_60 { background-position:-240px 0px;}
+.medal_review_lv6_60 { background-position:-300px 0px;}
+.medal_review_lv7_60 { background-position:-360px 0px;}
+.medal_review_lv8_60 { background-position:-420px 0px;}
+.medal_review_lv9_60 { background-position:-480px 0px;}
+/* 传播者 */
+.medal_disseminators_lv1_60 { background-position:0px -60px;}
+.medal_disseminators_lv2_60 { background-position:-60px -60px;}
+.medal_disseminators_lv3_60 { background-position:-120px -60px;}
+.medal_disseminators_lv4_60 { background-position:-180px -60px;}
+.medal_disseminators_lv5_60 { background-position:-240px -60px;}
+.medal_disseminators_lv6_60 { background-position:-300px -60px;}
+.medal_disseminators_lv7_60 { background-position:-360px -60px;}
+.medal_disseminators_lv8_60 { background-position:-420px -60px;}
+.medal_disseminators_lv9_60 { background-position:-480px -60px;}
+/* 守望者 */
+.medal_watchmen_lv1_60 { background-position:0px -120px;}
+.medal_watchmen_lv2_60 { background-position:-60px -120px;}
+.medal_watchmen_lv3_60 { background-position:-120px -120px;}
+.medal_watchmen_lv4_60 { background-position:-180px -120px;}
+.medal_watchmen_lv5_60 { background-position:-240px -120px;}
+.medal_watchmen_lv6_60 { background-position:-300px -120px;}
+.medal_watchmen_lv7_60 { background-position:-360px -120px;}
+.medal_watchmen_lv8_60 { background-position:-420px -120px;}
+.medal_watchmen_lv9_60 { background-position:-480px -120px;}
+/* 淘金者 */
+.medal_goldrush_lv1_60 { background-position:0px -180px;}
+.medal_goldrush_lv2_60 { background-position:-60px -180px;}
+.medal_goldrush_lv3_60 { background-position:-120px -180px;}
+.medal_goldrush_lv4_60 { background-position:-180px -180px;}
+.medal_goldrush_lv5_60 { background-position:-240px -180px;}
+.medal_goldrush_lv6_60 { background-position:-300px -180px;}
+.medal_goldrush_lv7_60 { background-position:-360px -180px;}
+.medal_goldrush_lv8_60 { background-position:-420px -180px;}
+.medal_goldrush_lv9_60 { background-position:-480px -180px;}
+/* 响应者 */
+.medal_responder_lv1_60 { background-position:0px -240px;}
+.medal_responder_lv2_60 { background-position:-60px -240px;}
+.medal_responder_lv3_60 { background-position:-120px -240px;}
+.medal_responder_lv4_60 { background-position:-180px -240px;}
+.medal_responder_lv5_60 { background-position:-240px -240px;}
+.medal_responder_lv6_60 { background-position:-300px -240px;}
+.medal_responder_lv7_60 { background-position:-360px -240px;}
+.medal_responder_lv8_60 { background-position:-420px -240px;}
+.medal_responder_lv9_60 { background-position:-480px -240px;}
+/* 会员 */
+.medal_junior_60 { background-position:0px -300px;}
+/* 指路人 */
+.medal_roadman_lv1_60 { background-position:0px -360px;}
+.medal_roadman_lv2_60 { background-position:-60px -360px;}
+.medal_roadman_lv3_60 { background-position:-120px -360px;}
+.medal_roadman_lv4_60 { background-position:-180px -360px;}
+.medal_roadman_lv5_60 { background-position:-240px -360px;}
+.medal_roadman_lv6_60 { background-position:-300px -360px;}
+.medal_roadman_lv7_60 { background-position:-360px -360px;}
+.medal_roadman_lv8_60 { background-position:-420px -360px;}
+.medal_roadman_lv9_60 { background-position:-480px -360px;}
+/* 精华作品 */
+.medal_bestauthor_lv1_60 { background-position:0px -420px;}
+.medal_bestauthor_lv2_60 { background-position:-60px -420px;}
+.medal_bestauthor_lv3_60 { background-position:-120px -420px;}
+.medal_bestauthor_lv4_60 { background-position:-180px -420px;}
+.medal_bestauthor_lv5_60 { background-position:-240px -420px;}
+.medal_bestauthor_lv6_60 { background-position:-300px -420px;}
+.medal_bestauthor_lv7_60 { background-position:-360px -420px;}
+.medal_bestauthor_lv8_60 { background-position:-420px -420px;}
+.medal_bestauthor_lv9_60 { background-position:-480px -420px;}
+/* 开拓者 */
+.medal_exploiter_lv1_60 { background-position:0px -480px;}
+.medal_exploiter_lv2_60 { background-position:-60px -480px;}
+.medal_exploiter_lv3_60 { background-position:-120px -480px;}
+.medal_exploiter_lv4_60 { background-position:-180px -480px;}
+.medal_exploiter_lv5_60 { background-position:-240px -480px;}
+.medal_exploiter_lv6_60 { background-position:-300px -480px;}
+.medal_exploiter_lv7_60 { background-position:-360px -480px;}
+.medal_exploiter_lv8_60 { background-position:-420px -480px;}
+.medal_exploiter_lv9_60 { background-position:-480px -480px;}
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_60 { background-position:0px -540px;}
+.medal_coverphotographer_lv2_60 { background-position:-60px -540px;}
+.medal_coverphotographer_lv3_60 { background-position:-120px -540px;}
+.medal_coverphotographer_lv4_60 { background-position:-180px -540px;}
+.medal_coverphotographer_lv5_60 { background-position:-240px -540px;}
+.medal_coverphotographer_lv6_60 { background-position:-300px -540px;}
+.medal_coverphotographer_lv7_60 { background-position:-360px -540px;}
+.medal_coverphotographer_lv8_60 { background-position:-420px -540px;}
+.medal_coverphotographer_lv9_60 { background-position:-480px -540px;}
+/* 图书管理员 */
+.medal_librarian_lv1_60 { background-position:0px -600px;}
+.medal_librarian_lv2_60 { background-position:-60px -600px;}
+.medal_librarian_lv3_60 { background-position:-120px -600px;}
+.medal_librarian_lv4_60 { background-position:-180px -600px;}
+.medal_librarian_lv5_60 { background-position:-240px -600px;}
+.medal_librarian_lv6_60 { background-position:-300px -600px;}
+.medal_librarian_lv7_60 { background-position:-360px -600px;}
+.medal_librarian_lv8_60 { background-position:-420px -600px;}
+.medal_librarian_lv9_60 { background-position:-480px -600px;}
+/* 游记沙发客 */
+.medal_firstreplier_lv1_60 { background-position:0px -660px;}
+.medal_firstreplier_lv2_60 { background-position:-60px -660px;}
+.medal_firstreplier_lv3_60 { background-position:-120px -660px;}
+.medal_firstreplier_lv4_60 { background-position:-180px -660px;}
+.medal_firstreplier_lv5_60 { background-position:-240px -660px;}
+.medal_firstreplier_lv6_60 { background-position:-300px -660px;}
+.medal_firstreplier_lv7_60 { background-position:-360px -660px;}
+.medal_firstreplier_lv8_60 { background-position:-420px -660px;}
+.medal_firstreplier_lv9_60 { background-position:-480px -660px;}
+/* 问答沙发客 */
+.medal_firsanswer_lv1_60 { background-position:0px -720px;}
+.medal_firsanswer_lv2_60 { background-position:-60px -720px;}
+.medal_firsanswer_lv3_60 { background-position:-120px -720px;}
+.medal_firsanswer_lv4_60 { background-position:-180px -720px;}
+.medal_firsanswer_lv5_60 { background-position:-240px -720px;}
+.medal_firsanswer_lv6_60 { background-position:-300px -720px;}
+.medal_firsanswer_lv7_60 { background-position:-360px -720px;}
+.medal_firsanswer_lv8_60 { background-position:-420px -720px;}
+.medal_firsanswer_lv9_60 { background-position:-480px -720px;}
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_60 { background-position:0px -780px;}
+.medal_firstreviewer_lv2_60 { background-position:-60px -780px;}
+.medal_firstreviewer_lv3_60 { background-position:-120px -780px;}
+.medal_firstreviewer_lv4_60 { background-position:-180px -780px;}
+.medal_firstreviewer_lv5_60 { background-position:-240px -780px;}
+.medal_firstreviewer_lv6_60 { background-position:-300px -780px;}
+.medal_firstreviewer_lv7_60 { background-position:-360px -780px;}
+.medal_firstreviewer_lv8_60 { background-position:-420px -780px;}
+.medal_firstreviewer_lv9_60 { background-position:-480px -780px;}
+/* 线下沙龙主讲人 */
+.medal_salon_60 { background-position:-60px -300px;}
+/* 锦囊作者 */
+.medal_guideauthor_60 { background-position:-120px -300px;}
+/* 现任版主 */
+.medal_forummaster_60 { background-position:-180px -300px;}
+/* 老版主 */
+.medal_exforummaster_60 { background-position:-240px -300px;}
+/* 点评排名 */
+.medal_reviewerrank_60 { background-position:-300px -300px;}
+/* 图片排名 */
+.medal_photographerrank_60 { background-position:-360px -300px;}
+/* 回答排名 */
+.medal_answerrank_60 { background-position:-420px -300px}
+
+
+
+/* 勋章列表 ***********   50   ********** */
+
+/* 未名勋章 */
+.medal_popular_lv1_50 ,
+.medal_popular_lv2_50 ,
+.medal_popular_lv3_50 ,
+.medal_popular_lv4_50 ,
+.medal_popular_lv5_50 ,
+.medal_popular_lv6_50 ,
+.medal_popular_lv7_50 ,
+.medal_popular_lv8_50 ,
+.medal_popular_lv9_50 ,
+/* 点评师 */
+.medal_review_lv1_50 ,
+.medal_review_lv2_50 ,
+.medal_review_lv3_50 ,
+.medal_review_lv4_50 ,
+.medal_review_lv5_50 ,
+.medal_review_lv6_50 ,
+.medal_review_lv7_50 ,
+.medal_review_lv8_50 ,
+.medal_review_lv9_50 ,
+/* 传播者 */
+.medal_disseminators_lv1_50 ,
+.medal_disseminators_lv2_50 ,
+.medal_disseminators_lv3_50 ,
+.medal_disseminators_lv4_50 ,
+.medal_disseminators_lv5_50 ,
+.medal_disseminators_lv6_50 ,
+.medal_disseminators_lv7_50 ,
+.medal_disseminators_lv8_50 ,
+.medal_disseminators_lv9_50 ,
+/* 守望者 */
+.medal_watchmen_lv1_50 ,
+.medal_watchmen_lv2_50 ,
+.medal_watchmen_lv3_50 ,
+.medal_watchmen_lv4_50 ,
+.medal_watchmen_lv5_50 ,
+.medal_watchmen_lv6_50 ,
+.medal_watchmen_lv7_50 ,
+.medal_watchmen_lv8_50 ,
+.medal_watchmen_lv9_50 ,
+/* 淘金者 */
+.medal_goldrush_lv1_50 ,
+.medal_goldrush_lv2_50 ,
+.medal_goldrush_lv3_50 ,
+.medal_goldrush_lv4_50 ,
+.medal_goldrush_lv5_50 ,
+.medal_goldrush_lv6_50 ,
+.medal_goldrush_lv7_50 ,
+.medal_goldrush_lv8_50 ,
+.medal_goldrush_lv9_50 ,
+/* 响应者 */
+.medal_responder_lv1_50 ,
+.medal_responder_lv2_50 ,
+.medal_responder_lv3_50 ,
+.medal_responder_lv4_50 ,
+.medal_responder_lv5_50 ,
+.medal_responder_lv6_50 ,
+.medal_responder_lv7_50 ,
+.medal_responder_lv8_50 ,
+.medal_responder_lv9_50 ,
+/* 会员 */
+.medal_junior_50 ,
+/* 指路人 */
+.medal_roadman_lv1_50 ,
+.medal_roadman_lv2_50 ,
+.medal_roadman_lv3_50 ,
+.medal_roadman_lv4_50 ,
+.medal_roadman_lv5_50 ,
+.medal_roadman_lv6_50 ,
+.medal_roadman_lv7_50 ,
+.medal_roadman_lv8_50 ,
+.medal_roadman_lv9_50 ,
+/* 精华作品 */
+.medal_bestauthor_lv1_50 ,
+.medal_bestauthor_lv2_50 ,
+.medal_bestauthor_lv3_50 ,
+.medal_bestauthor_lv4_50 ,
+.medal_bestauthor_lv5_50 ,
+.medal_bestauthor_lv6_50 ,
+.medal_bestauthor_lv7_50 ,
+.medal_bestauthor_lv8_50 ,
+.medal_bestauthor_lv9_50 ,
+/* 开拓者 */
+.medal_exploiter_lv1_50 ,
+.medal_exploiter_lv2_50 ,
+.medal_exploiter_lv3_50 ,
+.medal_exploiter_lv4_50 ,
+.medal_exploiter_lv5_50 ,
+.medal_exploiter_lv6_50 ,
+.medal_exploiter_lv7_50 ,
+.medal_exploiter_lv8_50 ,
+.medal_exploiter_lv9_50 ,
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_50 ,
+.medal_coverphotographer_lv2_50 ,
+.medal_coverphotographer_lv3_50 ,
+.medal_coverphotographer_lv4_50 ,
+.medal_coverphotographer_lv5_50 ,
+.medal_coverphotographer_lv6_50 ,
+.medal_coverphotographer_lv7_50 ,
+.medal_coverphotographer_lv8_50 ,
+.medal_coverphotographer_lv9_50 ,
+/* 图书管理员 */
+.medal_librarian_lv1_50 ,
+.medal_librarian_lv2_50 ,
+.medal_librarian_lv3_50 ,
+.medal_librarian_lv4_50 ,
+.medal_librarian_lv5_50 ,
+.medal_librarian_lv6_50 ,
+.medal_librarian_lv7_50 ,
+.medal_librarian_lv8_50 ,
+.medal_librarian_lv9_50 ,
+/* 游记沙发客 */
+.medal_firstreplier_lv1_50 ,
+.medal_firstreplier_lv2_50 ,
+.medal_firstreplier_lv3_50 ,
+.medal_firstreplier_lv4_50 ,
+.medal_firstreplier_lv5_50 ,
+.medal_firstreplier_lv6_50 ,
+.medal_firstreplier_lv7_50 ,
+.medal_firstreplier_lv8_50 ,
+.medal_firstreplier_lv9_50 ,
+/* 问答沙发客 */
+.medal_firsanswer_lv1_50 ,
+.medal_firsanswer_lv2_50 ,
+.medal_firsanswer_lv3_50 ,
+.medal_firsanswer_lv4_50 ,
+.medal_firsanswer_lv5_50 ,
+.medal_firsanswer_lv6_50 ,
+.medal_firsanswer_lv7_50 ,
+.medal_firsanswer_lv8_50 ,
+.medal_firsanswer_lv9_50 ,
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_50 ,
+.medal_firstreviewer_lv2_50 ,
+.medal_firstreviewer_lv3_50 ,
+.medal_firstreviewer_lv4_50 ,
+.medal_firstreviewer_lv5_50 ,
+.medal_firstreviewer_lv6_50 ,
+.medal_firstreviewer_lv7_50 ,
+.medal_firstreviewer_lv8_50 ,
+.medal_firstreviewer_lv9_50 ,
+/* 线下沙龙主讲人 */
+.medal_salon_50 ,
+/* 锦囊作者 */
+.medal_guideauthor_50 ,
+/* 现任版主 */
+.medal_forummaster_50 ,
+/* 老版主 */
+.medal_exforummaster_50 ,
+/* 点评排名 */
+.medal_reviewerrank_50 ,
+/* 图片排名 */
+.medal_photographerrank_50 ,
+/* 回答排名 */
+.medal_answerrank_50 {
+	width:50px; height:50px; display:inline-block; background:url(../../images/user2/medal/medal_icon_50.png) no-repeat;
+}
+/* 未名勋章 */
+.medal_popular_lv1_50 { background-position:0px -700px;}
+.medal_popular_lv2_50 { background-position:-50px -700px;}
+.medal_popular_lv3_50 { background-position:-100px -700px;}
+.medal_popular_lv4_50 { background-position:-150px -700px;}
+.medal_popular_lv5_50 { background-position:-200px -700px;}
+.medal_popular_lv6_50 { background-position:-250px -700px;}
+.medal_popular_lv7_50 { background-position:-300px -700px;}
+.medal_popular_lv8_50 { background-position:-350px -700px;}
+.medal_popular_lv9_50 { background-position:-400px -700px;}
+/* 点评师 */
+.medal_review_lv1_50 { background-position:0px 0px;}
+.medal_review_lv2_50 { background-position:-50px 0px;}
+.medal_review_lv3_50 { background-position:-100px 0px;}
+.medal_review_lv4_50 { background-position:-150px 0px;}
+.medal_review_lv5_50 { background-position:-200px 0px;}
+.medal_review_lv6_50 { background-position:-250px 0px;}
+.medal_review_lv7_50 { background-position:-300px 0px;}
+.medal_review_lv8_50 { background-position:-350px 0px;}
+.medal_review_lv9_50 { background-position:-400px 0px;}
+/* 传播者 */
+.medal_disseminators_lv1_50 { background-position:0px -50px;}
+.medal_disseminators_lv2_50 { background-position:-50px -50px;}
+.medal_disseminators_lv3_50 { background-position:-100px -50px;}
+.medal_disseminators_lv4_50 { background-position:-150px -50px;}
+.medal_disseminators_lv5_50 { background-position:-200px -50px;}
+.medal_disseminators_lv6_50 { background-position:-250px -50px;}
+.medal_disseminators_lv7_50 { background-position:-300px -50px;}
+.medal_disseminators_lv8_50 { background-position:-350px -50px;}
+.medal_disseminators_lv9_50 { background-position:-400px -50px;}
+/* 守望者 */
+.medal_watchmen_lv1_50 { background-position:0px -100px;}
+.medal_watchmen_lv2_50 { background-position:-50px -100px;}
+.medal_watchmen_lv3_50 { background-position:-100px -100px;}
+.medal_watchmen_lv4_50 { background-position:-150px -100px;}
+.medal_watchmen_lv5_50 { background-position:-200px -100px;}
+.medal_watchmen_lv6_50 { background-position:-250px -100px;}
+.medal_watchmen_lv7_50 { background-position:-300px -100px;}
+.medal_watchmen_lv8_50 { background-position:-350px -100px;}
+.medal_watchmen_lv9_50 { background-position:-400px -100px;}
+/* 淘金者 */
+.medal_goldrush_lv1_50 { background-position:0px -150px;}
+.medal_goldrush_lv2_50 { background-position:-50px -150px;}
+.medal_goldrush_lv3_50 { background-position:-100px -150px;}
+.medal_goldrush_lv4_50 { background-position:-150px -150px;}
+.medal_goldrush_lv5_50 { background-position:-200px -150px;}
+.medal_goldrush_lv6_50 { background-position:-250px -150px;}
+.medal_goldrush_lv7_50 { background-position:-300px -150px;}
+.medal_goldrush_lv8_50 { background-position:-350px -150px;}
+.medal_goldrush_lv9_50 { background-position:-400px -150px;}
+/* 响应者 */
+.medal_responder_lv1_50 { background-position:0px -200px;}
+.medal_responder_lv2_50 { background-position:-50px -200px;}
+.medal_responder_lv3_50 { background-position:-100px -200px;}
+.medal_responder_lv4_50 { background-position:-150px -200px;}
+.medal_responder_lv5_50 { background-position:-200px -200px;}
+.medal_responder_lv6_50 { background-position:-250px -200px;}
+.medal_responder_lv7_50 { background-position:-300px -200px;}
+.medal_responder_lv8_50 { background-position:-350px -200px;}
+.medal_responder_lv9_50 { background-position:-400px -200px;}
+/* 会员 */
+.medal_junior_50 { background-position:0px -250px;}
+/* 指路人 */
+.medal_roadman_lv1_50 { background-position:0px -300px;}
+.medal_roadman_lv2_50 { background-position:-50px -300px;}
+.medal_roadman_lv3_50 { background-position:-100px -300px;}
+.medal_roadman_lv4_50 { background-position:-150px -300px;}
+.medal_roadman_lv5_50 { background-position:-200px -300px;}
+.medal_roadman_lv6_50 { background-position:-250px -300px;}
+.medal_roadman_lv7_50 { background-position:-300px -300px;}
+.medal_roadman_lv8_50 { background-position:-350px -300px;}
+.medal_roadman_lv9_50 { background-position:-400px -300px;}
+/* 精华作品 */
+.medal_bestauthor_lv1_50 { background-position:0px -350px;}
+.medal_bestauthor_lv2_50 { background-position:-50px -350px;}
+.medal_bestauthor_lv3_50 { background-position:-100px -350px;}
+.medal_bestauthor_lv4_50 { background-position:-150px -350px;}
+.medal_bestauthor_lv5_50 { background-position:-200px -350px;}
+.medal_bestauthor_lv6_50 { background-position:-250px -350px;}
+.medal_bestauthor_lv7_50 { background-position:-300px -350px;}
+.medal_bestauthor_lv8_50 { background-position:-350px -350px;}
+.medal_bestauthor_lv9_50 { background-position:-400px -350px;}
+/* 开拓者 */
+.medal_exploiter_lv1_50 { background-position:0px -400px;}
+.medal_exploiter_lv2_50 { background-position:-50px -400px;}
+.medal_exploiter_lv3_50 { background-position:-100px -400px;}
+.medal_exploiter_lv4_50 { background-position:-150px -400px;}
+.medal_exploiter_lv5_50 { background-position:-200px -400px;}
+.medal_exploiter_lv6_50 { background-position:-250px -400px;}
+.medal_exploiter_lv7_50 { background-position:-300px -400px;}
+.medal_exploiter_lv8_50 { background-position:-350px -400px;}
+.medal_exploiter_lv9_50 { background-position:-400px -400px;}
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_50 { background-position:0px -450px;}
+.medal_coverphotographer_lv2_50 { background-position:-50px -450px;}
+.medal_coverphotographer_lv3_50 { background-position:-100px -450px;}
+.medal_coverphotographer_lv4_50 { background-position:-150px -450px;}
+.medal_coverphotographer_lv5_50 { background-position:-200px -450px;}
+.medal_coverphotographer_lv6_50 { background-position:-250px -450px;}
+.medal_coverphotographer_lv7_50 { background-position:-300px -450px;}
+.medal_coverphotographer_lv8_50 { background-position:-350px -450px;}
+.medal_coverphotographer_lv9_50 { background-position:-400px -450px;}
+/* 图书管理员 */
+.medal_librarian_lv1_50 { background-position:0px -500px;}
+.medal_librarian_lv2_50 { background-position:-50px -500px;}
+.medal_librarian_lv3_50 { background-position:-100px -500px;}
+.medal_librarian_lv4_50 { background-position:-150px -500px;}
+.medal_librarian_lv5_50 { background-position:-200px -500px;}
+.medal_librarian_lv6_50 { background-position:-250px -500px;}
+.medal_librarian_lv7_50 { background-position:-300px -500px;}
+.medal_librarian_lv8_50 { background-position:-350px -500px;}
+.medal_librarian_lv9_50 { background-position:-400px -500px;}
+/* 游记沙发客 */
+.medal_firstreplier_lv1_50 { background-position:0px -550px;}
+.medal_firstreplier_lv2_50 { background-position:-50px -550px;}
+.medal_firstreplier_lv3_50 { background-position:-100px -550px;}
+.medal_firstreplier_lv4_50 { background-position:-150px -550px;}
+.medal_firstreplier_lv5_50 { background-position:-200px -550px;}
+.medal_firstreplier_lv6_50 { background-position:-250px -550px;}
+.medal_firstreplier_lv7_50 { background-position:-300px -550px;}
+.medal_firstreplier_lv8_50 { background-position:-350px -550px;}
+.medal_firstreplier_lv9_50 { background-position:-400px -550px;}
+/* 问答沙发客 */
+.medal_firsanswer_lv1_50 { background-position:0px -600px;}
+.medal_firsanswer_lv2_50 { background-position:-50px -600px;}
+.medal_firsanswer_lv3_50 { background-position:-100px -600px;}
+.medal_firsanswer_lv4_50 { background-position:-150px -600px;}
+.medal_firsanswer_lv5_50 { background-position:-200px -600px;}
+.medal_firsanswer_lv6_50 { background-position:-250px -600px;}
+.medal_firsanswer_lv7_50 { background-position:-300px -600px;}
+.medal_firsanswer_lv8_50 { background-position:-350px -600px;}
+.medal_firsanswer_lv9_50 { background-position:-400px -600px;}
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_50 { background-position:0px -650px;}
+.medal_firstreviewer_lv2_50 { background-position:-50px -650px;}
+.medal_firstreviewer_lv3_50 { background-position:-100px -650px;}
+.medal_firstreviewer_lv4_50 { background-position:-150px -650px;}
+.medal_firstreviewer_lv5_50 { background-position:-200px -650px;}
+.medal_firstreviewer_lv6_50 { background-position:-250px -650px;}
+.medal_firstreviewer_lv7_50 { background-position:-300px -650px;}
+.medal_firstreviewer_lv8_50 { background-position:-350px -650px;}
+.medal_firstreviewer_lv9_50 { background-position:-400px -650px;}
+/* 线下沙龙主讲人 */
+.medal_salon_50 { background-position:-50px -250px;}
+/* 锦囊作者 */
+.medal_guideauthor_50 { background-position:-100px -250px;}
+/* 现任版主 */
+.medal_forummaster_50 { background-position:-150px -250px;}
+/* 老版主 */
+.medal_exforummaster_50 { background-position:-200px -250px;}
+/* 点评排名 */
+.medal_reviewerrank_50 { background-position:-250px -250px;}
+/* 图片排名 */
+.medal_photographerrank_50 { background-position:-300px -250px;}
+/* 回答排名 */
+.medal_answerrank_50 { background-position:-350px -250px}
+
+
+
+/* 勋章列表 ***********   24   ********** */
+
+/* 未名勋章 */
+.medal_popular_lv1_24 ,
+.medal_popular_lv2_24 ,
+.medal_popular_lv3_24 ,
+.medal_popular_lv4_24 ,
+.medal_popular_lv5_24 ,
+.medal_popular_lv6_24 ,
+.medal_popular_lv7_24 ,
+.medal_popular_lv8_24 ,
+.medal_popular_lv9_24 ,
+/* 点评师 */
+.medal_review_lv1_24 ,
+.medal_review_lv2_24 ,
+.medal_review_lv3_24 ,
+.medal_review_lv4_24 ,
+.medal_review_lv5_24 ,
+.medal_review_lv6_24 ,
+.medal_review_lv7_24 ,
+.medal_review_lv8_24 ,
+.medal_review_lv9_24 ,
+/* 传播者 */
+.medal_disseminators_lv1_24 ,
+.medal_disseminators_lv2_24 ,
+.medal_disseminators_lv3_24 ,
+.medal_disseminators_lv4_24 ,
+.medal_disseminators_lv5_24 ,
+.medal_disseminators_lv6_24 ,
+.medal_disseminators_lv7_24 ,
+.medal_disseminators_lv8_24 ,
+.medal_disseminators_lv9_24 ,
+/* 守望者 */
+.medal_watchmen_lv1_24 ,
+.medal_watchmen_lv2_24 ,
+.medal_watchmen_lv3_24 ,
+.medal_watchmen_lv4_24 ,
+.medal_watchmen_lv5_24 ,
+.medal_watchmen_lv6_24 ,
+.medal_watchmen_lv7_24 ,
+.medal_watchmen_lv8_24 ,
+.medal_watchmen_lv9_24 ,
+/* 淘金者 */
+.medal_goldrush_lv1_24 ,
+.medal_goldrush_lv2_24 ,
+.medal_goldrush_lv3_24 ,
+.medal_goldrush_lv4_24 ,
+.medal_goldrush_lv5_24 ,
+.medal_goldrush_lv6_24 ,
+.medal_goldrush_lv7_24 ,
+.medal_goldrush_lv8_24 ,
+.medal_goldrush_lv9_24 ,
+/* 响应者 */
+.medal_responder_lv1_24 ,
+.medal_responder_lv2_24 ,
+.medal_responder_lv3_24 ,
+.medal_responder_lv4_24 ,
+.medal_responder_lv5_24 ,
+.medal_responder_lv6_24 ,
+.medal_responder_lv7_24 ,
+.medal_responder_lv8_24 ,
+.medal_responder_lv9_24 ,
+/* 会员 */
+.medal_junior_24 ,
+/* 指路人 */
+.medal_roadman_lv1_24 ,
+.medal_roadman_lv2_24 ,
+.medal_roadman_lv3_24 ,
+.medal_roadman_lv4_24 ,
+.medal_roadman_lv5_24 ,
+.medal_roadman_lv6_24 ,
+.medal_roadman_lv7_24 ,
+.medal_roadman_lv8_24 ,
+.medal_roadman_lv9_24 ,
+/* 精华作品 */
+.medal_bestauthor_lv1_24 ,
+.medal_bestauthor_lv2_24 ,
+.medal_bestauthor_lv3_24 ,
+.medal_bestauthor_lv4_24 ,
+.medal_bestauthor_lv5_24 ,
+.medal_bestauthor_lv6_24 ,
+.medal_bestauthor_lv7_24 ,
+.medal_bestauthor_lv8_24 ,
+.medal_bestauthor_lv9_24 ,
+/* 开拓者 */
+.medal_exploiter_lv1_24 ,
+.medal_exploiter_lv2_24 ,
+.medal_exploiter_lv3_24 ,
+.medal_exploiter_lv4_24 ,
+.medal_exploiter_lv5_24 ,
+.medal_exploiter_lv6_24 ,
+.medal_exploiter_lv7_24 ,
+.medal_exploiter_lv8_24 ,
+.medal_exploiter_lv9_24 ,
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_24 ,
+.medal_coverphotographer_lv2_24 ,
+.medal_coverphotographer_lv3_24 ,
+.medal_coverphotographer_lv4_24 ,
+.medal_coverphotographer_lv5_24 ,
+.medal_coverphotographer_lv6_24 ,
+.medal_coverphotographer_lv7_24 ,
+.medal_coverphotographer_lv8_24 ,
+.medal_coverphotographer_lv9_24 ,
+/* 图书管理员 */
+.medal_librarian_lv1_24 ,
+.medal_librarian_lv2_24 ,
+.medal_librarian_lv3_24 ,
+.medal_librarian_lv4_24 ,
+.medal_librarian_lv5_24 ,
+.medal_librarian_lv6_24 ,
+.medal_librarian_lv7_24 ,
+.medal_librarian_lv8_24 ,
+.medal_librarian_lv9_24 ,
+/* 游记沙发客 */
+.medal_firstreplier_lv1_24 ,
+.medal_firstreplier_lv2_24 ,
+.medal_firstreplier_lv3_24 ,
+.medal_firstreplier_lv4_24 ,
+.medal_firstreplier_lv5_24 ,
+.medal_firstreplier_lv6_24 ,
+.medal_firstreplier_lv7_24 ,
+.medal_firstreplier_lv8_24 ,
+.medal_firstreplier_lv9_24 ,
+/* 问答沙发客 */
+.medal_firsanswer_lv1_24 ,
+.medal_firsanswer_lv2_24 ,
+.medal_firsanswer_lv3_24 ,
+.medal_firsanswer_lv4_24 ,
+.medal_firsanswer_lv5_24 ,
+.medal_firsanswer_lv6_24 ,
+.medal_firsanswer_lv7_24 ,
+.medal_firsanswer_lv8_24 ,
+.medal_firsanswer_lv9_24 ,
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_24 ,
+.medal_firstreviewer_lv2_24 ,
+.medal_firstreviewer_lv3_24 ,
+.medal_firstreviewer_lv4_24 ,
+.medal_firstreviewer_lv5_24 ,
+.medal_firstreviewer_lv6_24 ,
+.medal_firstreviewer_lv7_24 ,
+.medal_firstreviewer_lv8_24 ,
+.medal_firstreviewer_lv9_24 ,
+/* 线下沙龙主讲人 */
+.medal_salon_24 ,
+/* 锦囊作者 */
+.medal_guideauthor_24 ,
+/* 现任版主 */
+.medal_forummaster_24 ,
+/* 老版主 */
+.medal_exforummaster_24 ,
+/* 点评排名 */
+.medal_reviewerrank_24 ,
+/* 图片排名 */
+.medal_photographerrank_24 ,
+/* 回答排名 */
+.medal_answerrank_24 {
+	width:56px; height:24px; display:inline-block; background:url(../../images/user2/medal/medal_icon_24.png) no-repeat;
+}
+/* 未名勋章 */
+.medal_popular_lv1_24 { background-position:0px -420px;}
+.medal_popular_lv2_24 { background-position:-56px -420px;}
+.medal_popular_lv3_24 { background-position:-112px -420px;}
+.medal_popular_lv4_24 { background-position:-168px -420px;}
+.medal_popular_lv5_24 { background-position:-224px -420px;}
+.medal_popular_lv6_24 { background-position:-280px -420px;}
+.medal_popular_lv7_24 { background-position:-336px -420px;}
+.medal_popular_lv8_24 { background-position:-392px -420px;}
+.medal_popular_lv9_24 { background-position:-448px -420px;}
+/* 点评师 */
+.medal_review_lv1_24 { background-position:0px 0px;}
+.medal_review_lv2_24 { background-position:-56px 0px;}
+.medal_review_lv3_24 { background-position:-112px 0px;}
+.medal_review_lv4_24 { background-position:-168px 0px;}
+.medal_review_lv5_24 { background-position:-224px 0px;}
+.medal_review_lv6_24 { background-position:-280px 0px;}
+.medal_review_lv7_24 { background-position:-336px 0px;}
+.medal_review_lv8_24 { background-position:-392px 0px;}
+.medal_review_lv9_24 { background-position:-448px 0px;}
+/* 传播者 */
+.medal_disseminators_lv1_24 { background-position:0px -30px;}
+.medal_disseminators_lv2_24 { background-position:-56px -30px;}
+.medal_disseminators_lv3_24 { background-position:-112px -30px;}
+.medal_disseminators_lv4_24 { background-position:-168px -30px;}
+.medal_disseminators_lv5_24 { background-position:-224px -30px;}
+.medal_disseminators_lv6_24 { background-position:-280px -30px;}
+.medal_disseminators_lv7_24 { background-position:-336px -30px;}
+.medal_disseminators_lv8_24 { background-position:-392px -30px;}
+.medal_disseminators_lv9_24 { background-position:-448px -30px;}
+/* 守望者 */
+.medal_watchmen_lv1_24 { background-position:0px -60px;}
+.medal_watchmen_lv2_24 { background-position:-56px -60px;}
+.medal_watchmen_lv3_24 { background-position:-112px -60px;}
+.medal_watchmen_lv4_24 { background-position:-168px -60px;}
+.medal_watchmen_lv5_24 { background-position:-224px -60px;}
+.medal_watchmen_lv6_24 { background-position:-280px -60px;}
+.medal_watchmen_lv7_24 { background-position:-336px -60px;}
+.medal_watchmen_lv8_24 { background-position:-392px -60px;}
+.medal_watchmen_lv9_24 { background-position:-448px -60px;}
+/* 淘金者 */
+.medal_goldrush_lv1_24 { background-position:0px -90px;}
+.medal_goldrush_lv2_24 { background-position:-56px -90px;}
+.medal_goldrush_lv3_24 { background-position:-112px -90px;}
+.medal_goldrush_lv4_24 { background-position:-168px -90px;}
+.medal_goldrush_lv5_24 { background-position:-224px -90px;}
+.medal_goldrush_lv6_24 { background-position:-280px -90px;}
+.medal_goldrush_lv7_24 { background-position:-336px -90px;}
+.medal_goldrush_lv8_24 { background-position:-392px -90px;}
+.medal_goldrush_lv9_24 { background-position:-448px -90px;}
+/* 响应者 */
+.medal_responder_lv1_24 { background-position:0px -120px;}
+.medal_responder_lv2_24 { background-position:-56px -120px;}
+.medal_responder_lv3_24 { background-position:-112px -120px;}
+.medal_responder_lv4_24 { background-position:-168px -120px;}
+.medal_responder_lv5_24 { background-position:-224px -120px;}
+.medal_responder_lv6_24 { background-position:-280px -120px;}
+.medal_responder_lv7_24 { background-position:-336px -120px;}
+.medal_responder_lv8_24 { background-position:-392px -120px;}
+.medal_responder_lv9_24 { background-position:-448px -120px;}
+/* 会员 */
+.medal_junior_24 { background-position:0px -150px; width:24px;}
+/* 指路人 */
+.medal_roadman_lv1_24 { background-position:0px -180px;}
+.medal_roadman_lv2_24 { background-position:-56px -180px;}
+.medal_roadman_lv3_24 { background-position:-112px -180px;}
+.medal_roadman_lv4_24 { background-position:-168px -180px;}
+.medal_roadman_lv5_24 { background-position:-224px -180px;}
+.medal_roadman_lv6_24 { background-position:-280px -180px;}
+.medal_roadman_lv7_24 { background-position:-336px -180px;}
+.medal_roadman_lv8_24 { background-position:-392px -180px;}
+.medal_roadman_lv9_24 { background-position:-448px -180px;}
+/* 精华作品 */
+.medal_bestauthor_lv1_24 { background-position:0px -210px;}
+.medal_bestauthor_lv2_24 { background-position:-56px -210px;}
+.medal_bestauthor_lv3_24 { background-position:-112px -210px;}
+.medal_bestauthor_lv4_24 { background-position:-168px -210px;}
+.medal_bestauthor_lv5_24 { background-position:-224px -210px;}
+.medal_bestauthor_lv6_24 { background-position:-280px -210px;}
+.medal_bestauthor_lv7_24 { background-position:-336px -210px;}
+.medal_bestauthor_lv8_24 { background-position:-392px -210px;}
+.medal_bestauthor_lv9_24 { background-position:-448px -210px;}
+/* 开拓者 */
+.medal_exploiter_lv1_24 { background-position:0px -240px;}
+.medal_exploiter_lv2_24 { background-position:-56px -240px;}
+.medal_exploiter_lv3_24 { background-position:-112px -240px;}
+.medal_exploiter_lv4_24 { background-position:-168px -240px;}
+.medal_exploiter_lv5_24 { background-position:-224px -240px;}
+.medal_exploiter_lv6_24 { background-position:-280px -240px;}
+.medal_exploiter_lv7_24 { background-position:-336px -240px;}
+.medal_exploiter_lv8_24 { background-position:-392px -240px;}
+.medal_exploiter_lv9_24 { background-position:-448px -240px;}
+/* 封面摄影师 */
+.medal_coverphotographer_lv1_24 { background-position:0px -270px;}
+.medal_coverphotographer_lv2_24 { background-position:-56px -270px;}
+.medal_coverphotographer_lv3_24 { background-position:-112px -270px;}
+.medal_coverphotographer_lv4_24 { background-position:-168px -270px;}
+.medal_coverphotographer_lv5_24 { background-position:-224px -270px;}
+.medal_coverphotographer_lv6_24 { background-position:-280px -270px;}
+.medal_coverphotographer_lv7_24 { background-position:-336px -270px;}
+.medal_coverphotographer_lv8_24 { background-position:-392px -270px;}
+.medal_coverphotographer_lv9_24 { background-position:-448px -270px;}
+/* 图书管理员 */
+.medal_librarian_lv1_24 { background-position:0px -300px;}
+.medal_librarian_lv2_24 { background-position:-56px -300px;}
+.medal_librarian_lv3_24 { background-position:-112px -300px;}
+.medal_librarian_lv4_24 { background-position:-168px -300px;}
+.medal_librarian_lv5_24 { background-position:-224px -300px;}
+.medal_librarian_lv6_24 { background-position:-280px -300px;}
+.medal_librarian_lv7_24 { background-position:-336px -300px;}
+.medal_librarian_lv8_24 { background-position:-392px -300px;}
+.medal_librarian_lv9_24 { background-position:-448px -300px;}
+/* 游记沙发客 */
+.medal_firstreplier_lv1_24 { background-position:0px -330px;}
+.medal_firstreplier_lv2_24 { background-position:-56px -330px;}
+.medal_firstreplier_lv3_24 { background-position:-112px -330px;}
+.medal_firstreplier_lv4_24 { background-position:-168px -330px;}
+.medal_firstreplier_lv5_24 { background-position:-224px -330px;}
+.medal_firstreplier_lv6_24 { background-position:-280px -330px;}
+.medal_firstreplier_lv7_24 { background-position:-336px -330px;}
+.medal_firstreplier_lv8_24 { background-position:-392px -330px;}
+.medal_firstreplier_lv9_24 { background-position:-448px -330px;}
+/* 问答沙发客 */
+.medal_firsanswer_lv1_24 { background-position:0px -360px;}
+.medal_firsanswer_lv2_24 { background-position:-56px -360px;}
+.medal_firsanswer_lv3_24 { background-position:-112px -360px;}
+.medal_firsanswer_lv4_24 { background-position:-168px -360px;}
+.medal_firsanswer_lv5_24 { background-position:-224px -360px;}
+.medal_firsanswer_lv6_24 { background-position:-280px -360px;}
+.medal_firsanswer_lv7_24 { background-position:-336px -360px;}
+.medal_firsanswer_lv8_24 { background-position:-392px -360px;}
+.medal_firsanswer_lv9_24 { background-position:-448px -360px;}
+/* 点评沙发客 */
+.medal_firstreviewer_lv1_24 { background-position:0px -390px;}
+.medal_firstreviewer_lv2_24 { background-position:-56px -390px;}
+.medal_firstreviewer_lv3_24 { background-position:-112px -390px;}
+.medal_firstreviewer_lv4_24 { background-position:-168px -390px;}
+.medal_firstreviewer_lv5_24 { background-position:-224px -390px;}
+.medal_firstreviewer_lv6_24 { background-position:-280px -390px;}
+.medal_firstreviewer_lv7_24 { background-position:-336px -390px;}
+.medal_firstreviewer_lv8_24 { background-position:-392px -390px;}
+.medal_firstreviewer_lv9_24 { background-position:-448px -390px;}
+/* 线下沙龙主讲人 */
+.medal_salon_24 { background-position:-56px -150px; width:24px;}
+/* 锦囊作者 */
+.medal_guideauthor_24 { background-position:-112px -150px; width:24px;}
+/* 现任版主 */
+.medal_forummaster_24 { background-position:-168px -150px; width:24px;}
+/* 老版主 */
+.medal_exforummaster_24 { background-position:-224px -150px; width:24px;}
+/* 点评排名 */
+.medal_reviewerrank_24 { background-position:-280px -150px;}
+/* 图片排名 */
+.medal_photographerrank_24 { background-position:-336px -150px;}
+/* 回答排名 */
+.medal_answerrank_24 { background-position:-392px -150px;}

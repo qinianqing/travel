@@ -1,0 +1,340 @@
+/*设置默认编码集*/
+@charset "UTF-8";
+
+/*css 初始化 */
+body,div,p,ul,dl,dt,dd,ol,span,li,a{
+    margin:0;
+    padding:0;
+    font-size:13px;
+    font-family:Microsoft YaHei;
+    list-style:none;
+    text-decoration:none;
+    color:black;
+}
+/*去掉行内替换元素空白缝隙*/
+table{
+    border-collapse:collapse;
+}
+img{
+    border:0;
+    vertical-align:middle;
+}
+/*各浏览器显示不同，去掉边框等默认样式*/
+fieldset, img, input, button {
+    border:0 none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+.clearfix:after{
+    content:"";
+    height:0;
+    line-height:0;
+    clear:both;
+    display:block;
+    visibility:hidden;
+}
+.clearfix{
+    zoom: 1;
+}
+/*h1-h6*/
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+/*废物利用*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 980px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+/*tool开始*/
+.water_tool{
+    /*height: 32px;*/
+    height: 35px;
+    background-color: #323232;
+}
+/*tool的logo*/
+.water_tool img{
+    height: 20px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+/*tool左边的ul*/
+.water_ul1 li{
+    float: left;
+    margin:0 10px;
+    height: 32px;
+    line-height: 32px;
+}
+.water_ul1 li a{
+    color:#C0C0C0;
+    font-weight: 700;
+    font-size: 15px;
+}
+.water_ul1 .water_green {
+    color: #10B041;
+}
+/*小三角*/
+.water_dropdown {
+    position: relative;
+    padding-right: 25px;
+}
+
+.water_dropdown i {
+    width: 15px;
+    height: 9px;
+    position: absolute;
+    overflow: hidden;
+    top: 12px;
+    right: 6px;
+}
+
+.water_dropdown s {
+    font: 400 15px/15px consolas;
+    color: #C0C0C0;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    font-weight: 700;
+}
+.water_ul1 li:hover a{
+    color:#10B041;
+}
+.water_ul1 li:hover s{
+    color:#10B041;
+}
+/*tool右边的ul*/
+.water_ul2 li{
+    float: left;
+    margin: 0 16px;
+}
+.water_a1{
+    color: #c0c0c0;
+    font:700 16px/32px microsoft yahei;
+}
+.water_ul2 li:hover a{
+    color:#10B041;
+}
+.water_publica1{
+    width: 200px;
+    height: 200px;
+}
+.water_publica1{
+    width: 32px;
+    height:32px;
+    display: inline-block;
+}
+.a1{
+    background-image: url('../images/mirror1.png');
+}
+.a1:hover{
+    background-image: url('../images/mirror2.png');
+}
+.a2{
+    background-image: url('../images/tencent1.png');
+}
+.a2:hover{
+    background-image: url('../images/tencent2.png');
+}
+.a3{
+    background-image: url('../images/weixin1.png');
+}
+.a3:hover{
+    background-image: url('../images/weixin2.png');
+}
+.a4{
+    background-image: url('../images/weibo1.png');
+}
+.a4:hover{
+    background-image: url('../images/weibo2.png');
+}
+.water_ul2 .water_sp{
+    width: 2px;
+    height: 20px;
+    line-height: 32px;
+    background-color: #c0c0c0;
+    margin-top: 5px;
+}
+.water_bigLi{
+    /*position: relative;*/
+    width: 200px;
+}
+#water_txt{
+    position: relative;
+    top:-11px;
+    height: 13px;
+    /*top: 8px;*/
+    /*right:410px;*/
+    display: none;
+}
+/*main开始*/
+.water_main{
+    /*height: 640px;*/
+    height: 560px;
+    /*background-image: url("../images/main.jpg");*/
+    position: relative;
+}
+.hero-video{
+    position: relative;
+}
+.water_search{
+    position: absolute;
+    height: 200px;
+    width: 640px;
+    margin-top: 130px;
+    margin-left: 360px;
+    left:0;
+    top: 0;
+}
+.water_opacity{
+    position: absolute;
+    height: 138px;
+    width: 640px;
+    background: rgba(0,0,0,.3);
+    margin-top: 20px;
+}
+.water_title{
+     position: relative;
+     font: 400 45px/50px microsoft yahei;
+     color:white;
+     text-align: center;
+    /*margin-top: 20px;*/
+ }
+.water_txt1{
+    width: 600px;
+    height: 50px;
+    position: relative;
+    left: 20px;
+    top: 25px;
+    font-size:26px;
+}
+.water_opacity .text s{
+    position: absolute;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    top: 35px;
+    right: 35px;
+    /*background-image: url("../images/mirror3.png");*/
+}
+.water_ul3{
+    position: relative;
+    /*color: white;*/
+    left: 20px;
+    top: 30px;
+}
+.water_ul3 li{
+    float: left;
+    color:white;
+    margin:0 10px;
+}
+.water_ul3 a{
+    color:white;
+}
+.water_p1{
+    position: absolute;
+    left: 0;
+    top: 32px;
+    color:white;
+    cursor: pointer;
+}
+.water_ul3 .water_te1{
+    margin:0;
+}
+/*tab栏开始*/
+.water_tab{
+    position: relative;
+    height: 800px;
+    /*margin-top: 60px;*/
+}
+.water_tab h2{
+    font:400 25px microsoft yahei;
+}
+.tabs{
+    position: absolute;
+    top: 0;
+    right:0;
+}
+.tabs li{
+    float: left;
+    /*width: 70px;*/
+    /*height: 30px;*/
+    margin:0 10px;
+    text-align: center;
+}
+.tabs li a{
+    font:700 15px/30px microsoft yehei;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+}
+.water_tab .bd ul li {
+    display: none;
+}
+.water_tab .tabs li.current{
+    background-color: green;
+    border-radius: 20px;
+}
+.water_tab .bd li.current{
+    display: block;
+}
+.water_tab .tabs a:hover{
+    color:white;
+}
+/*瀑布流*/
+.box {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+/*小火箭*/
+#returnTop{
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    left: 1280px;
+    top: 500px;
+    display: none;
+}

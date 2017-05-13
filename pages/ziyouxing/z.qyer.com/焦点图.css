@@ -1,0 +1,95 @@
+.all {
+    width: 100%;
+    height: 420px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    margin: -2px auto;
+    position: relative;
+}
+.screen {
+    width: 1904px;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+}
+.screen li {
+    width:1904px;
+    height: 420px;
+    overflow: hidden;
+    float: left;
+}
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width:7616px;
+}
+.all ol {
+    position: absolute;
+    right: 35%;
+    bottom: 50px;
+    line-height: 30px;
+    text-align: center;
+
+}
+.all ol li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius:30px;
+}
+.all ol li.current {
+    background: yellow;
+}
+#arr {
+    display: none;
+}
+#arr #left {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'ºÚÌå';
+    font-size: 40px;
+    color: yellow;
+    opacity: 0.5;
+    border: 1px solid #fff;
+}
+ #arr #right {
+     width: 60px;
+     height: 60px;
+     position: absolute;
+     right: 25px;
+     top: 50%;
+     margin-top: -20px;
+     background: #000;
+     cursor: pointer;
+     line-height: 60px;
+     text-align: center;
+     font-weight: bold;
+     font-family: 'ºÚÌå';
+     font-size: 40px;
+     color: yellow;
+     opacity: 0.5;
+     border: 1px solid #fff;
+
+}
+#returnTop{
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    left: 1280px;
+    top: 500px;
+    display: none;
+}

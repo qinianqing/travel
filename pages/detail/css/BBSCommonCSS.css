@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration:none;
+}
+ul {
+    list-style: none;
+}
+/*版心*/
+.bx{
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*在有该类的元素内部元素的前面和后面添加元素*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+/*只要after两侧有浮动元素，after就会跑到最下面，从而撑开带有该类名的父盒子*/
+.clearfix:after {
+    clear: both;
+}
+/*用于兼容IE/7/6*/
+.clearfix {
+    *zoom: 1;
+}

@@ -1,0 +1,30 @@
+项目规范
+
+1.电脑像素统一调整为1366乘以768的。
+
+2.起名规范：页面名+文档名（名字起的规范的话后期将页面链接在一起就不会容易出错）
+  例如：主页起名：html :index 
+                  images :index-images 
+                  css :index-css
+                  javascript :index-javascript
+        
+        登录页起名: html :login
+                    images :login-images 
+                    css :login-css
+                    javascript :login-javascript
+
+        详情页起名: html :detail
+                    images :detail-images 
+                    css :detail-css
+                    javascript :detail-javascript
+
+        等等......
+
+
+3.每个人确定好自己负责的页面后可以回去找自己喜欢的那一页去做，尽量保证静态页面的相似度，
+动态页面的话可以根据自己的意愿去添加或者修改，不能实现的动态效果可以不实现，自己也可以往 
+上面添加自己想要做的特效；
+
+4.每个页面的头部,底部和版心宽度可能都不一样，所以不规定全局样式，每个人做好自己的完整的页面就好
+
+5. * 创建元素最好是动态添加，模拟的假数据尽可能使用 json 格式，模仿后台传送的数据，规范点应该有加分。(可选项)
